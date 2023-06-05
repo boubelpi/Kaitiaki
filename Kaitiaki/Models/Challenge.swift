@@ -25,7 +25,7 @@ extension Challenge {
         
         Challenge(name: "Sleep mode 2",
                   category: .init(name: "Reduce consumption of mobile terminals", category: .equipment),
-                  quiz: ChallengeQuiz(question: "What is the best duration for sleep mode ?",suggestions: ["3 minutes" ,"5 minutes", "8 minutes", "12 minutes"], answer: "3 minutes", tip: "Put your computer to sleep after 3 minutes without use (there are very simple keyboard shortcuts for this) and turn it off during an extended break.")),
+                  quiz: ChallengeQuiz(question: "When should you turn off your computer completely?",suggestions: ["1 minutes" ,"5 minutes", "8 minutes", "12 minutes"], answer: "3 minutes", tip: "Put your computer to sleep after 3 minutes without use (there are very simple keyboard shortcuts for this) and turn it off during an extended break.")),
    
         Challenge(name: "Web requests",
                   category: .init(name: "Make short and simple web requests", category: .internet),

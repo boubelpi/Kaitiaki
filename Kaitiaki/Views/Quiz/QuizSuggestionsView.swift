@@ -3,7 +3,7 @@
 //  Kaitiaki
 //
 //  Created by Elodie Iparraguirre on 27/05/23.
-//
+//Ici on met les 4 propositions de réponses à chaque question
 
 import SwiftUI
 

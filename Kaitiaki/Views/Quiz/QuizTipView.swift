@@ -3,7 +3,7 @@
 //  Kaitiaki
 //
 //  Created by Elodie Iparraguirre on 27/05/23.
-//
+//It is the logic of the quiz that is here
 
 import SwiftUI
 

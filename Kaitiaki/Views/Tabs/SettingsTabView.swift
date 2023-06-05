@@ -32,7 +32,7 @@ struct SettingsTabView: View {
                     
                     
                     SubscriptionView()
-                    SettingsView(settings: $settings)
+                    SettingsFinalView(settings: $settings)
                     Section("Get In Touch") {
                         Label("Rate us in the App Store", systemImage: "star.fill")
                         SocialMediaLinkView(title: "Twitter",

@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-
 @main
 struct KaitiakiApp: App {
     var body: some Scene {

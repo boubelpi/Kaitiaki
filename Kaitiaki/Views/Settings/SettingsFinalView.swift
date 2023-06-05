@@ -1,13 +1,14 @@
 //
-//  SettingsView.swift
+//  SettingsFinalView.swift
 //  Kaitiaki
 //
 //  Created by Elodie Iparraguirre on 14/05/23.
 //
+//(Original) SettingsView devient SettingsFinalView
 
 import SwiftUI
 
-struct SettingsView: View {
+struct SettingsFinalView: View {
     @Binding var settings: Settings //pour relier les state qui sont dans le contentview
     
     var body: some View {
@@ -21,42 +22,46 @@ struct SettingsView: View {
                     Spacer()
                     Toggle(isOn: $settings.isInterfaceSoundsEnabled) {}
                 }
-            }
+            } //Group End
             
-            HStack {
-                Label(
-                    title: {
-                        Text("""
+            Group {
+                HStack {
+                    Label(
+                        title: {
+                            Text("""
                              Do you suffer from
                              color blindness?
                             """)
-                        .fixedSize(horizontal: true, vertical: false)
-                    },
-                    icon: {
-                        Image(systemName: "eye.trianglebadge.exclamationmark")
-                            .foregroundColor(.red)
-                    }
-                )
-                Spacer()
-                Toggle(isOn: $settings.isSufferingColourBlindness) {}
+                            .fixedSize(horizontal: true, vertical: false)
+                        },
+                        icon: {
+                            Image(systemName: "eye.trianglebadge.exclamationmark")
+                                .foregroundColor(.red)
+                        }
+                    )
+                    Spacer()
+                    Toggle(isOn: $settings.isSufferingColourBlindness) {}
+                }
             }
             
-            HStack {
-                Label(
-                    title: {
-                        Text("""
+            Group {
+                HStack {
+                    Label(
+                        title: {
+                            Text("""
                             Ads preferences
                              see custom ads
                             """)
-                        .fixedSize(horizontal: true, vertical: false)
-                    },
-                    icon: {
-                        Image(systemName: "play.rectangle.fill")
-                            .foregroundColor(.blue)
-                    }
-                )
-                Spacer()
-                Toggle(isOn: $settings.HasAdPreferences) {}
+                            .fixedSize(horizontal: true, vertical: false)
+                        },
+                        icon: {
+                            Image(systemName: "play.rectangle.fill")
+                                .foregroundColor(.blue)
+                        }
+                    )
+                    Spacer()
+                    Toggle(isOn: $settings.HasAdPreferences) {}
+                }
             }
             
             Group {
@@ -80,21 +85,24 @@ struct SettingsView: View {
                     Spacer()
                     Toggle(isOn:$settings.HasAdPreferences) {}
                 }
+            }
+            
+            Group {
+            HStack {
+                Label(
+                    title: {
+                        Text("Do you suffer from dyscalculia? We will hide the challenges that are not adapted to your situation")
+                    },
+                    icon: {
+                        Image(systemName: "x.squareroot")
+                            .foregroundColor(.red)
+                    }
+                )
+                Spacer()
+                Toggle(isOn: $settings.isSufferingDyscalculia) {}
                 
-                HStack {
-                    Label(
-                        title: {
-                            Text("Do you suffer from dyscalculia? We will hide the challenges that are not adapted to your situation")
-                        },
-                        icon: {
-                            Image(systemName: "x.squareroot")
-                                .foregroundColor(.red)
-                        }
-                    )
-                    Spacer()
-                    Toggle(isOn: $settings.isSufferingDyscalculia) {}
-                    
-                }
+            }
+        }
                 
                 NavigationLink(destination: UpgradeProView()) {
                     Label(
@@ -123,7 +131,7 @@ struct SettingsView: View {
                 }
                 NavigationLink(destination: PasswordView()) {
                     Label(
-                        title: { Text(" Change Password    ")},
+                        title: { Text(" Change Password")},
                         icon: {
                             Image(systemName:
                                     "lock.fill")
@@ -138,6 +146,6 @@ struct SettingsView: View {
             }
         }//Fin section settings
     }
-}
+
 
 

@@ -12,27 +12,23 @@ struct TabBarView: View {
         TabView {
             TipsView()
                 .tabItem {
-                    Label("Carbon emissions", systemImage: "carbon.dioxide.cloud.fill")
-
+                    Label("Carbon footprint calculator", systemImage: "leaf.fill")
                 }
+            
             TipsView()
                 .tabItem {
-                    Label("TipsView", systemImage: "carbon.dioxide.cloud.fill")
-
+                    Label("CO2e converter", systemImage: "carbon.dioxide.cloud.fill")
                 }
-            TipsView()
+            
+            ChallengeCategoryListView()
                 .tabItem {
-                    Label("Carbon emissions", systemImage: "carbon.dioxide.cloud.fill")
-
+                    Label("Quiz & Tips", systemImage: "message")
                 }
-            TipsView()
+            
+            //SettingsTabView()
+              ProfileView()
                 .tabItem {
-                    Label("Carbon emissions", systemImage: "carbon.dioxide.cloud.fill")
-
-                }
-            SettingsTabView()
-                .tabItem {
-                    Label("Settings", systemImage: "gear")
+                    Label("Profile", systemImage: "person")
 
                 }
         }

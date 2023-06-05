@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CalculatorView: View {
+struct ConverterView: View {
     @State var txt : String = ""
     var body: some View {
             VStack {
@@ -64,10 +64,4 @@ struct CalculatorView: View {
                 Spacer()
             }
         }
-}
-
-struct CalculatorView_Previews: PreviewProvider {
-    static var previews: some View {
-        CalculatorView(txt: "")
-    }
 }

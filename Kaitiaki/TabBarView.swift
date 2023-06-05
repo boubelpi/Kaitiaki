@@ -10,12 +10,12 @@ import SwiftUI
 struct TabBarView: View {
     var body: some View {
         TabView {
-            CalculatorView(txt : "")
+            TipsView()
                 .tabItem {
                     Label("Carbon footprint calculator", systemImage: "leaf.fill")
                 }
             
-            TipsView()
+            ConverterView(txt : "")
                 .tabItem {
                     Label("CO2e converter", systemImage: "carbon.dioxide.cloud.fill")
                 }

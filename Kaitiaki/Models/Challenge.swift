@@ -37,7 +37,7 @@ extension Challenge {
         
         Challenge(name: "Equipment consumption",
                   category: .init(name: "USE SOBER EQUIPMENT", category: .equipment),
-                  quiz: ChallengeQuiz(question: "which equipment consumes the least?",suggestions: ["A PC" ,"A laptop", "A tablet"], answer: "2 to 4 years", tip: "Going from 2 to 4 years of use for a tablet or computer improves its environmental balance by 50%. In the event of breakdown or renewal of equipment, think about repairs, the re-use and reconditioned equipment market and, ultimately, the mandatory recycling of waste electrical and electronic equipment. These points are not your responsibility alone. Beware of some screensavers that use 3D graphics.They place enormous demands on the computer's graphics card and can consume as much, if not more, than the active mode.")),
+                  quiz: ChallengeQuiz(question: "which equipment consumes the least?",suggestions: ["A PC" ,"A laptop", "A tablet", ""], answer: "2 to 4 years", tip: "Going from 2 to 4 years of use for a tablet or computer improves its environmental balance by 50%. In the event of breakdown or renewal of equipment, think about repairs, the re-use and reconditioned equipment market and, ultimately, the mandatory recycling of waste electrical and electronic equipment. These points are not your responsibility alone. Beware of some screensavers that use 3D graphics.They place enormous demands on the computer's graphics card and can consume as much, if not more, than the active mode.")),
    
         Challenge(name: "Web requests",
                   category: .init(name: "Make short and simple web requests", category: .internet),

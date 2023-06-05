@@ -49,6 +49,8 @@
 		1BB09C102A2BB45300FA62A7 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB09C0F2A2BB45300FA62A7 /* ProfileView.swift */; };
 		1BB09C152A2D29AA00FA62A7 /* RemindersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB09C142A2D29AA00FA62A7 /* RemindersView.swift */; };
 		1BDEDEA42A2B40E800AE294F /* Tests&quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDEDEA32A2B40E800AE294F /* Tests&quiz.swift */; };
+		653B5B8C2A2DD84C00DFAFFF /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B5B8B2A2DD84C00DFAFFF /* CalculatorView.swift */; };
+		653B5B8E2A2DE60C00DFAFFF /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B5B8D2A2DE60C00DFAFFF /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +97,8 @@
 		1BB09C0F2A2BB45300FA62A7 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		1BB09C142A2D29AA00FA62A7 /* RemindersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersView.swift; sourceTree = "<group>"; };
 		1BDEDEA32A2B40E800AE294F /* Tests&quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tests&quiz.swift"; sourceTree = "<group>"; };
+		653B5B8B2A2DD84C00DFAFFF /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
+		653B5B8D2A2DE60C00DFAFFF /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +250,7 @@
 				1B1B2F3B2A1109010066DDD2 /* Settings.swift */,
 				1B0D76D82A1FF52D007093A1 /* Challenge.swift */,
 				1B0D76DC2A1FF73D007093A1 /* ChallengeQuiz.swift */,
+				653B5B8D2A2DE60C00DFAFFF /* Calculator.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 		1B1B2F422A1115430066DDD2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				653B5B8A2A2DD83B00DFAFFF /* Calculator */,
 				1BB09C112A2CE9A900FA62A7 /* Divers */,
 				1B0D76E52A226F37007093A1 /* Challenge */,
 				1B0D76E42A226F17007093A1 /* Quiz */,
@@ -275,6 +281,14 @@
 			children = (
 			);
 			path = Divers;
+			sourceTree = "<group>";
+		};
+		653B5B8A2A2DD83B00DFAFFF /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				653B5B8B2A2DD84C00DFAFFF /* CalculatorView.swift */,
+			);
+			path = Calculator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,6 +384,7 @@
 				1BB09C102A2BB45300FA62A7 /* ProfileView.swift in Sources */,
 				1B1B2EA72A0A47C70066DDD2 /* SignInView.swift in Sources */,
 				1B1B2EEA2A0D9C020066DDD2 /* PasswordView.swift in Sources */,
+				653B5B8E2A2DE60C00DFAFFF /* Calculator.swift in Sources */,
 				1B1B2EFA2A1015490066DDD2 /* SignInView2.swift in Sources */,
 				1B1B2EAF2A0A4D8F0066DDD2 /* RateView.swift in Sources */,
 				1B1B2EE82A0D98FF0066DDD2 /* EmailView.swift in Sources */,
@@ -387,6 +402,7 @@
 				1B1B2EDC2A0D8ED60066DDD2 /* ShareView.swift in Sources */,
 				1B1B2F3A2A1107E70066DDD2 /* SettingsFinalView.swift in Sources */,
 				1B1B2EAB2A0A4B660066DDD2 /* UpgradeProView.swift in Sources */,
+				653B5B8C2A2DD84C00DFAFFF /* CalculatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,7 +531,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Kaitiaki/Preview Content\"";
-				DEVELOPMENT_TEAM = 2MJF5Z4V65;
+				DEVELOPMENT_TEAM = Y3L5JJA8S2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -544,7 +560,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Kaitiaki/Preview Content\"";
-				DEVELOPMENT_TEAM = 2MJF5Z4V65;
+				DEVELOPMENT_TEAM = Y3L5JJA8S2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

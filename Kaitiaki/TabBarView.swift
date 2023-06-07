@@ -20,7 +20,7 @@ struct TabBarView: View {
                     Label("CO2e converter", systemImage: "carbon.dioxide.cloud.fill")
                 }
             
-            ChallengeCategoryListView()
+            QuizAndTipsView()
                 .tabItem {
                     Label("Quiz & Tips", systemImage: "message")
                 }

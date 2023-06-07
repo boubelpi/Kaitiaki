@@ -1,5 +1,5 @@
 //
-//  ChallengeCategoryListView.swift
+//  ChallengeListView.swift
 //  Kaitiaki
 //
 //  Created by Elodie Iparraguirre on 27/05/23.
@@ -7,21 +7,25 @@
 
 import SwiftUI
 
-struct ChallengeCategoryListView: View {
+struct ChallengeListView: View {
+    var category: ChallengeCategory.Category
+    var challenges: [Subject] {
+        Subject.all.filter { $0.category.category == category }
+    }
     var body: some View {
-        NavigationView {
+        VStack {
             ScrollView {
                 VStack {
-                    ForEach(ChallengeCategory.Category.allCases, id: \.self) { category in
-                        NavigationLink(destination: ChallengeListView(category: category)) {
-                            Text(category.rawValue.capitalized)
+                    ForEach(challenges, id: \.self) { challenge in
+                        NavigationLink(destination: ChallengeQuizView(quiz: challenge.quiz)) {
+                            Text(challenge.name.capitalized)
                                 .bold()
                                 .font(.title3)
                                 .foregroundColor(.white)
                                 .padding()
                                 .frame(maxWidth: .infinity)
                                 .background(
-                                    Color.green
+                                    Color.blue
                                         .cornerRadius(15)
                                 )
                                 .padding()
@@ -29,8 +33,7 @@ struct ChallengeCategoryListView: View {
                     }
                 }
             }
-            .navigationTitle("Quiz and Tips")
-            .font(.title2)
         }
     }
 }
+

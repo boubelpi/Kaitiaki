@@ -18,22 +18,24 @@ struct StartingPageView: View {
             Text("""
                Three parameters have been chosen, these are the most recurrent uses.
                 
-                We will measure your carbon footprint of emails, streaming or visiocalls and obtain the amount of CO2 you emit in a week or in a year.
+                We will measure your carbon footprint of emails, streaming or videocalls and obtain the amount of CO2 you emit in a week or in a year.
 
                  We will then compare the impact of your usages
                  to the manufacturing of your appliances.
                """)
-            VStack(alignment: .leading, spacing : 12) {
+            HStack {
                 HStack {
                     Text("""
-                 \(emails) emails sent
-                 
-                 per week
-                 """)
-                    Text("i")
+                \(emails) emails sent
+                
+                per week
+                """)
                 }
+                .frame(width: 150, height : 100, alignment: .leading)
+                .background(Rectangle().foregroundColor(.blue))
+                Text("i")
             }
-            .frame(width: 100, height: 130, alignment: .leading)
+            .frame(width: 150, height: 100, alignment: .leading)
             .background(Rectangle().foregroundColor(.blue))
             VStack(alignment: .leading, spacing : 12) {
                 Text("""
@@ -42,7 +44,7 @@ struct StartingPageView: View {
                 per week
                 """)
             }
-            .frame(width: 100, height: 130, alignment: .leading)
+            .frame(width: 150, height : 100, alignment : .leading)
             .background(Rectangle().foregroundColor(.blue))
             VStack(alignment: .leading, spacing : 12) {
                 Text("""
@@ -51,7 +53,7 @@ struct StartingPageView: View {
                  per week
                  """)
             }
-            .frame(width: 100, height: 130, alignment: .leading)
+            .frame(width: 150, height : 100, alignment: .leading)
                 .background(Rectangle().foregroundColor(.blue))
             Spacer()
             Spacer()

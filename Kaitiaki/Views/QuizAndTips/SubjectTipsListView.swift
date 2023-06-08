@@ -30,6 +30,7 @@ struct SubjectTipsListView: View {
                 )
                 //.foregroundColor(.accentColor)
                 .padding()
+                //i also added the accentcolor2 
             }
         }
     }

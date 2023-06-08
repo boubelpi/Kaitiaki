@@ -66,6 +66,7 @@
 		653B5BA32A32372E00DFAFFF /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B5BA22A32372E00DFAFFF /* CalculatorView.swift */; };
 		653B5BA52A326C5100DFAFFF /* CalculatorAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B5BA42A326C5100DFAFFF /* CalculatorAlgorithm.swift */; };
 		653B5BA72A32789C00DFAFFF /* ModelCO2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B5BA62A32789C00DFAFFF /* ModelCO2.swift */; };
+		653B5BAB2A3290E900DFAFFF /* ModalView in Frameworks */ = {isa = PBXBuildFile; productRef = 653B5BAA2A3290E900DFAFFF /* ModalView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,6 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				653B5BAB2A3290E900DFAFFF /* ModalView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +362,9 @@
 			dependencies = (
 			);
 			name = Kaitiaki;
+			packageProductDependencies = (
+				653B5BAA2A3290E900DFAFFF /* ModalView */,
+			);
 			productName = Kaitiaki;
 			productReference = 1B0E00252A08EF30000B6D29 /* Kaitiaki.app */;
 			productType = "com.apple.product-type.application";
@@ -388,6 +393,9 @@
 				Base,
 			);
 			mainGroup = 1B0E001C2A08EF30000B6D29;
+			packageReferences = (
+				653B5BA92A3290E900DFAFFF /* XCRemoteSwiftPackageReference "modal-view" */,
+			);
 			productRefGroup = 1B0E00262A08EF30000B6D29 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -671,6 +679,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		653B5BA92A3290E900DFAFFF /* XCRemoteSwiftPackageReference "modal-view" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/diniska/modal-view";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		653B5BAA2A3290E900DFAFFF /* ModalView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 653B5BA92A3290E900DFAFFF /* XCRemoteSwiftPackageReference "modal-view" */;
+			productName = ModalView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1B0E001D2A08EF30000B6D29 /* Project object */;
 }

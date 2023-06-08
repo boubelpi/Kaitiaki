@@ -179,19 +179,19 @@ func weight_video_device (_ x : Stream_e_Visio) -> Int {
 
 
 func calc_email (_ num : Int, _ attach : emailAttachment, _ device: Emails) -> Double {
-    let otn = Double(num) / Double(1500)
+    let otn = Double(round_calc(Double(num) / Double(1500),1))!
     let ans = otn * Double(emails_1500_kg(attach, device))
     return ans
 }
 
 func calc_stream (_ num : Int, _ attach : streamAttachment, _ device: Stream_e_Visio) -> Double {
-    let otn = Double(num) / Double(70)
+    let otn = Double(round_calc(Double(num) / Double(70),1))!
     let ans = otn * Double(stream_70_h(attach, device))
     return ans
 }
 
 func calc_visio (_ num : Int, _ attach : visioAttachment, _ device: Stream_e_Visio) -> Double {
-    let otn = Double(num) / Double(70)
+    let otn = Double(round_calc(Double(num) / Double(70),1))!
     let ans = otn * Double(visio_70_h(attach, device))
     return ans
 }

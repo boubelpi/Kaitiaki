@@ -97,7 +97,7 @@ struct StartingPageView: View {
                             }
                         }
                         .frame(width: 252, height: 174, alignment: .leading)
-                        .background(Rectangle().foregroundColor(Color(uiColor: UIColor(red: 4 / 255, green: 141 / 255, blue : 141 / 255, alpha : 1))))
+                        .background(Rectangle().foregroundColor(.accentColor))
                         HStack {
                             VStack(alignment: .leading, spacing : 12) {
                                 Text("""
@@ -123,7 +123,7 @@ struct StartingPageView: View {
                             }
                         }
                         .frame(width: 252, height : 174, alignment : .leading)
-                        .background(Rectangle().foregroundColor(Color(uiColor: UIColor(red: 4 / 255, green: 141 / 255, blue : 141 / 255, alpha : 1))))
+                        .background(Rectangle().foregroundColor(.accentColor))
                         HStack {
                             VStack(alignment: .leading, spacing : 12) {
                                 Text("""
@@ -149,7 +149,7 @@ struct StartingPageView: View {
                             }
                         }
                         .frame(width: 252, height : 174, alignment : .leading)
-                        .background(Rectangle().foregroundColor(Color(uiColor: UIColor(red: 4 / 255, green: 141 / 255, blue : 141 / 255, alpha : 1))))
+                        .background(Rectangle().foregroundColor(.accentColor))
                         //Spacer()
                         /*Spacer()
                          Spacer()*/

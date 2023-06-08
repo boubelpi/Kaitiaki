@@ -4,6 +4,7 @@
 //
 //  Created by Elodie Iparraguirre on 05/06/23.
 // This file is the child file for the clickable elements internet and equipment under the picker tab Tips.
+//
 
 import SwiftUI
 import Foundation

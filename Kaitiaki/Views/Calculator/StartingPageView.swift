@@ -7,6 +7,7 @@
 
 import SwiftUI
 import UIKit
+import ModalView
 
 struct StartingPageView: View {
     @State private var emails : Int = 0
@@ -47,7 +48,7 @@ struct StartingPageView: View {
         })
     }
     var body: some View {
-            NavigationView {
+            ModalPresenter {
                 ScrollView {
                     VStack {
                         Text("Discover the impact of  your digital usages on the climate")
@@ -60,17 +61,25 @@ struct StartingPageView: View {
                  We will then compare the impact of your usages
                  to the manufacturing of your appliances.
                """)
-                        NavigationLink(destination: PopupView()) {
-                            Label(title: { Text("")},
-                                  icon: {
-                                Image(systemName:
-                                        "info")
-                                /*.resizable()*/
-                                .scaledToFit()
-                                .foregroundColor(.gray)
-                            })
+                        HStack {
+                            Spacer()
+                            Spacer()
+                            ModalLink(destination: PopupView()) {
+                                ZStack {
+                                    Label(title: { Text("")},
+                                          icon: {
+                                        Image(systemName:
+                                                "info")
+                                        /*.resizable()*/
+                                        .scaledToFit()
+                                        .foregroundColor(.black)
+                                        .background(Circle().foregroundColor(.gray).frame(width: 25, height: 25))
+                                    }
+                                    )
+                                    .padding(.trailing)
+                                }
+                            }
                         }
-                        
                         VStack(alignment: .leading, spacing: 12) {
                             HStack {
                                 HStack {
@@ -78,6 +87,7 @@ struct StartingPageView: View {
                 \(emails) emails sent per week
                 """)
                                 }
+                                .foregroundColor(.white)
                             }
                             UISliderView(value: emails_d, minValue: 0.0, maxValue: 1500.0, thumbColor: .white, minTrackColor: .purple, maxTrackColor: .green)
                             Picker("Device", selection: $selEmail) {
@@ -100,9 +110,12 @@ struct StartingPageView: View {
                         .background(Rectangle().foregroundColor(.accentColor))
                         HStack {
                             VStack(alignment: .leading, spacing : 12) {
-                                Text("""
+                                HStack {
+                                    Text("""
                 \(stream) hours of streaming per week
                 """)
+                                }
+                                .foregroundColor(.white)
                                 UISliderView(value: stream_d, minValue: 0.0, maxValue: 70.0, thumbColor: .white, minTrackColor: .purple, maxTrackColor: .green)
                                 Picker("Device", selection: $selStream) {
                                     Text("Smartphone").tag(Stream_e_Visio.smartphone)
@@ -126,9 +139,11 @@ struct StartingPageView: View {
                         .background(Rectangle().foregroundColor(.accentColor))
                         HStack {
                             VStack(alignment: .leading, spacing : 12) {
-                                Text("""
+                                HStack {
+                                    Text("""
                  \(visio) hours of videocalls per week
-                 """)
+                 """).accentColor(.white)
+                                }.foregroundColor(.white)
                                 UISliderView(value: visio_d, minValue: 0.0, maxValue: 70.0, thumbColor: .white, minTrackColor: .purple, maxTrackColor: .green)
                                 Picker("Device", selection: $selVisio) {
                                     Text("Smartphone").tag(Stream_e_Visio.smartphone)
@@ -153,7 +168,7 @@ struct StartingPageView: View {
                         //Spacer()
                         /*Spacer()
                          Spacer()*/
-                        NavigationLink(destination: CalculatorView()) {
+                        ModalLink(destination: CalculatorView()) {
                         Text("Validate")
                         }.foregroundColor(.green)
                             .buttonStyle(.bordered)

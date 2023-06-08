@@ -79,7 +79,7 @@ struct StartingPageView: View {
                 """)
                                 }
                             }
-                            UISliderView(value: emails_d, minValue: 0.0, maxValue: 1500.0, thumbColor: .red, minTrackColor: .purple, maxTrackColor: .green)
+                            UISliderView(value: emails_d, minValue: 0.0, maxValue: 1500.0, thumbColor: .white, minTrackColor: .purple, maxTrackColor: .green)
                             Picker("Device", selection: $selEmail) {
                                 Text("Smartphone").tag(Emails.smartphone)
                                 Text("Tablet").tag(Emails.tablet)
@@ -103,7 +103,7 @@ struct StartingPageView: View {
                                 Text("""
                 \(stream) hours of streaming per week
                 """)
-                                UISliderView(value: stream_d, minValue: 0.0, maxValue: 70.0, thumbColor: .red, minTrackColor: .purple, maxTrackColor: .green)
+                                UISliderView(value: stream_d, minValue: 0.0, maxValue: 70.0, thumbColor: .white, minTrackColor: .purple, maxTrackColor: .green)
                                 Picker("Device", selection: $selStream) {
                                     Text("Smartphone").tag(Stream_e_Visio.smartphone)
                                     Text("Tablet").tag(Stream_e_Visio.tablet)
@@ -129,7 +129,7 @@ struct StartingPageView: View {
                                 Text("""
                  \(visio) hours of videocalls per week
                  """)
-                                UISliderView(value: visio_d, minValue: 0.0, maxValue: 70.0, thumbColor: .red, minTrackColor: .purple, maxTrackColor: .green)
+                                UISliderView(value: visio_d, minValue: 0.0, maxValue: 70.0, thumbColor: .white, minTrackColor: .purple, maxTrackColor: .green)
                                 Picker("Device", selection: $selVisio) {
                                     Text("Smartphone").tag(Stream_e_Visio.smartphone)
                                     Text("Tablet").tag(Stream_e_Visio.tablet)

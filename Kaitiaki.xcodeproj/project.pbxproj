@@ -63,6 +63,8 @@
 		653B5B9F2A3218EB00DFAFFF /* DevicesSelected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B5B9E2A3218EB00DFAFFF /* DevicesSelected.swift */; };
 		653B5BA12A3223DB00DFAFFF /* Attachments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B5BA02A3223DB00DFAFFF /* Attachments.swift */; };
 		653B5BA32A32372E00DFAFFF /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B5BA22A32372E00DFAFFF /* CalculatorView.swift */; };
+		653B5BA52A326C5100DFAFFF /* CalculatorAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B5BA42A326C5100DFAFFF /* CalculatorAlgorithm.swift */; };
+		653B5BA72A32789C00DFAFFF /* ModelCO2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B5BA62A32789C00DFAFFF /* ModelCO2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,6 +125,8 @@
 		653B5B9E2A3218EB00DFAFFF /* DevicesSelected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesSelected.swift; sourceTree = "<group>"; };
 		653B5BA02A3223DB00DFAFFF /* Attachments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attachments.swift; sourceTree = "<group>"; };
 		653B5BA22A32372E00DFAFFF /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
+		653B5BA42A326C5100DFAFFF /* CalculatorAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorAlgorithm.swift; sourceTree = "<group>"; };
+		653B5BA62A32789C00DFAFFF /* ModelCO2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCO2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +287,8 @@
 				1BB09C382A2E7BCF00FA62A7 /* QuizAndTipsOption.swift */,
 				653B5B9E2A3218EB00DFAFFF /* DevicesSelected.swift */,
 				653B5BA02A3223DB00DFAFFF /* Attachments.swift */,
+				653B5BA42A326C5100DFAFFF /* CalculatorAlgorithm.swift */,
+				653B5BA62A32789C00DFAFFF /* ModelCO2.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -443,6 +449,7 @@
 				1B1B2EE82A0D98FF0066DDD2 /* EmailView.swift in Sources */,
 				1B0D76DB2A1FF618007093A1 /* ChallengeCategory.swift in Sources */,
 				653B5B9F2A3218EB00DFAFFF /* DevicesSelected.swift in Sources */,
+				653B5BA52A326C5100DFAFFF /* CalculatorAlgorithm.swift in Sources */,
 				1B0D76E32A226084007093A1 /* ChallengeListView.swift in Sources */,
 				1B1B2EBE2A0AF1050066DDD2 /* DisconnectView.swift in Sources */,
 				1BDEDEA42A2B40E800AE294F /* Tests&quiz.swift in Sources */,
@@ -450,6 +457,7 @@
 				1B0D76DF2A225C71007093A1 /* ChallengeQuizView.swift in Sources */,
 				1B1B2EA92A0A4AA40066DDD2 /* NudgeView.swift in Sources */,
 				1B0D76E72A226F7F007093A1 /* QuizSuggestionsView.swift in Sources */,
+				653B5BA72A32789C00DFAFFF /* ModelCO2.swift in Sources */,
 				1B0E00292A08EF30000B6D29 /* KaitiakiApp.swift in Sources */,
 				1B0D76D92A1FF52D007093A1 /* Subject.swift in Sources */,
 				653B5BA12A3223DB00DFAFFF /* Attachments.swift in Sources */,

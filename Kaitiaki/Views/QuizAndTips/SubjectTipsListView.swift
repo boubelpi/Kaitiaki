@@ -18,14 +18,17 @@ struct SubjectTipsListView: View {
                         .foregroundColor(.white)
                     Spacer()
                     Image(systemName: "lock")
+                        .foregroundColor(.white)
                         .font(.title3)
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
                 .background(
-                    Color.green
+                    Color.blue // changes the colors of all button elements in quiz and tips
+                    //.Color.accentColor
                         .cornerRadius(15)
                 )
+                //.foregroundColor(.accentColor)
                 .padding()
             }
         }

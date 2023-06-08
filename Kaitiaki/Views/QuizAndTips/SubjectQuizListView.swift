@@ -18,9 +18,10 @@ struct SubjectQuizListView: View {
                     .padding()
                     .frame(maxWidth: .infinity)
                     .background(
-                        Color.green
+                        Color.blue
                             .cornerRadius(15)
                     )
+                    //.foregroundColor(.accentColor)
                     .padding()
             }
         }

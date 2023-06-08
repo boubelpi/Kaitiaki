@@ -24,7 +24,7 @@ struct QuizAndTipsListView<V: View>: View {
                 .padding()
                 .frame(maxWidth: .infinity)
                 .background(
-                    Color.green
+                    Color.orange
                         .cornerRadius(15)
                 )
                 .padding()

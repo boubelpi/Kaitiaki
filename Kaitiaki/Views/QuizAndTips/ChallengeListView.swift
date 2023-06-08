@@ -28,6 +28,7 @@ struct ChallengeListView: View {
                                     Color.blue
                                         .cornerRadius(15)
                                 )
+                                //.foregroundColor(.accentColor)
                                 .padding()
                         }
                     }

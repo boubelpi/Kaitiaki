@@ -32,7 +32,7 @@ struct SubjectTipsListView: View {
     }
 }
 
-struct TipsListView_Previews: PreviewProvider {
+struct SubjectTipsListView_Previews: PreviewProvider {
     static var previews: some View {
         SubjectTipsListView()
     }

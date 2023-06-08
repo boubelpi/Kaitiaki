@@ -156,6 +156,8 @@ struct StartingPageView: View {
                         NavigationLink(destination: CalculatorView()) {
                         Text("Validate")
                         }.foregroundColor(.green)
+                            .buttonStyle(.bordered)
+                            .tint(.accentColor)
                     }
                 }
         }

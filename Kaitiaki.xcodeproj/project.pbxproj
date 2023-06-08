@@ -60,6 +60,9 @@
 		653B5B942A30CEF400DFAFFF /* StartingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B5B932A30CEF400DFAFFF /* StartingPageView.swift */; };
 		653B5B982A31C47200DFAFFF /* UISliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B5B972A31C47200DFAFFF /* UISliderView.swift */; };
 		653B5B9D2A31D2C800DFAFFF /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B5B9C2A31D2C800DFAFFF /* PopupView.swift */; };
+		653B5B9F2A3218EB00DFAFFF /* DevicesSelected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B5B9E2A3218EB00DFAFFF /* DevicesSelected.swift */; };
+		653B5BA12A3223DB00DFAFFF /* Attachments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B5BA02A3223DB00DFAFFF /* Attachments.swift */; };
+		653B5BA32A32372E00DFAFFF /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B5BA22A32372E00DFAFFF /* CalculatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,6 +120,9 @@
 		653B5B932A30CEF400DFAFFF /* StartingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingPageView.swift; sourceTree = "<group>"; };
 		653B5B972A31C47200DFAFFF /* UISliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderView.swift; sourceTree = "<group>"; };
 		653B5B9C2A31D2C800DFAFFF /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		653B5B9E2A3218EB00DFAFFF /* DevicesSelected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesSelected.swift; sourceTree = "<group>"; };
+		653B5BA02A3223DB00DFAFFF /* Attachments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attachments.swift; sourceTree = "<group>"; };
+		653B5BA22A32372E00DFAFFF /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +281,8 @@
 				1B0D76DC2A1FF73D007093A1 /* ChallengeQuiz.swift */,
 				653B5B8D2A2DE60C00DFAFFF /* Converter.swift */,
 				1BB09C382A2E7BCF00FA62A7 /* QuizAndTipsOption.swift */,
+				653B5B9E2A3218EB00DFAFFF /* DevicesSelected.swift */,
+				653B5BA02A3223DB00DFAFFF /* Attachments.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -322,6 +330,7 @@
 				653B5B932A30CEF400DFAFFF /* StartingPageView.swift */,
 				653B5B972A31C47200DFAFFF /* UISliderView.swift */,
 				653B5B9C2A31D2C800DFAFFF /* PopupView.swift */,
+				653B5BA22A32372E00DFAFFF /* CalculatorView.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -430,8 +439,10 @@
 				1B1B2EFA2A1015490066DDD2 /* SignInView2.swift in Sources */,
 				1BB09C352A2E77F900FA62A7 /* PickerQuizAndTipsView.swift in Sources */,
 				1B1B2EAF2A0A4D8F0066DDD2 /* RateView.swift in Sources */,
+				653B5BA32A32372E00DFAFFF /* CalculatorView.swift in Sources */,
 				1B1B2EE82A0D98FF0066DDD2 /* EmailView.swift in Sources */,
 				1B0D76DB2A1FF618007093A1 /* ChallengeCategory.swift in Sources */,
+				653B5B9F2A3218EB00DFAFFF /* DevicesSelected.swift in Sources */,
 				1B0D76E32A226084007093A1 /* ChallengeListView.swift in Sources */,
 				1B1B2EBE2A0AF1050066DDD2 /* DisconnectView.swift in Sources */,
 				1BDEDEA42A2B40E800AE294F /* Tests&quiz.swift in Sources */,
@@ -441,6 +452,7 @@
 				1B0D76E72A226F7F007093A1 /* QuizSuggestionsView.swift in Sources */,
 				1B0E00292A08EF30000B6D29 /* KaitiakiApp.swift in Sources */,
 				1B0D76D92A1FF52D007093A1 /* Subject.swift in Sources */,
+				653B5BA12A3223DB00DFAFFF /* Attachments.swift in Sources */,
 				1B0D76EB2A227464007093A1 /* QuizGoBackButton.swift in Sources */,
 				1B1B2EDC2A0D8ED60066DDD2 /* ShareView.swift in Sources */,
 				1BB09C3D2A2E7EC900FA62A7 /* QuizAndTipsListView.swift in Sources */,

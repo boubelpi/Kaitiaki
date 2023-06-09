@@ -6,14 +6,17 @@
 //
 
 import SwiftUI
+import ModalView
 
 struct ConverterView: View {
     @State var txt : String = ""
     var body: some View {
+        ModalPresenter {
             VStack {
-                Spacer()
                 Text("Easily view an amount of CO2e")
-                    .font(.largeTitle)
+                    .font(.title)
+                Spacer()
+                Text("By using the converter below, we can have the equivalent of this CO2 quantity in different areas.")
                 Spacer()
                 VStack {
                     Text("Enter an amount of CO2e below")
@@ -22,46 +25,19 @@ struct ConverterView: View {
                         .fixedSize(horizontal: false, vertical: true)
                         .padding()
                         .frame(width: 100,height: 50)
-                        .background(Rectangle().fill(Color.white).shadow(radius : 3))
+                        .background(Rectangle().background(Color.white).foregroundColor(.white))
                     Text("kg CO2e")
                 }
                 .background(Rectangle().fill(Color.gray))
                 Spacer()
-                HStack {
-                    VStack {
-                        Text(String(find_water(txt)))
-                            .font(.largeTitle)
-                        Text("liters of bottled water")
-                    }
-                    .background(Rectangle().fill(Color.gray))
-                    VStack {
-                        Text(String(find_voiture(txt)))
-                            .font(.largeTitle)
-                        Text("km by car")
-                    }
-                    .background(Rectangle().fill(Color.gray))
-                    VStack {
-                        Text(String(find_tshirts(txt)))
-                            .font(.largeTitle)
-                        Text("t shirts")
-                    }
-                    .background(Rectangle().fill(Color.gray))
+                ModalLink(destination: PopUpConverterView(txt : txt)) {
+                    Text("validate").foregroundColor(.black)
                 }
+                .background(RoundedRectangle(cornerRadius: 15).foregroundColor(.green).frame(width: 100, height: 70))
                 Spacer()
-                HStack {
-                    VStack {
-                        Text(String(find_boeuf(txt))).font(.largeTitle)
-                        Text("meal with beef")
-                    }
-                    .background(Rectangle().fill(Color.gray))
-                    VStack {
-                        Text(String(find_biere(txt))).font(.largeTitle)
-                        Text("liters of beer")
-                    }
-                    .background(Rectangle().fill(Color.gray))
-                }
                 Spacer()
                 Spacer()
             }
         }
+    }
 }

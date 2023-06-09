@@ -67,6 +67,7 @@
 		653B5BA52A326C5100DFAFFF /* CalculatorAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B5BA42A326C5100DFAFFF /* CalculatorAlgorithm.swift */; };
 		653B5BA72A32789C00DFAFFF /* ModelCO2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B5BA62A32789C00DFAFFF /* ModelCO2.swift */; };
 		653B5BAB2A3290E900DFAFFF /* ModalView in Frameworks */ = {isa = PBXBuildFile; productRef = 653B5BAA2A3290E900DFAFFF /* ModalView */; };
+		653B5BAF2A32B0B000DFAFFF /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B5BAE2A32B0B000DFAFFF /* Pair.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -130,6 +131,7 @@
 		653B5BA22A32372E00DFAFFF /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 		653B5BA42A326C5100DFAFFF /* CalculatorAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorAlgorithm.swift; sourceTree = "<group>"; };
 		653B5BA62A32789C00DFAFFF /* ModelCO2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCO2.swift; sourceTree = "<group>"; };
+		653B5BAE2A32B0B000DFAFFF /* Pair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,6 +296,7 @@
 				653B5BA02A3223DB00DFAFFF /* Attachments.swift */,
 				653B5BA42A326C5100DFAFFF /* CalculatorAlgorithm.swift */,
 				653B5BA62A32789C00DFAFFF /* ModelCO2.swift */,
+				653B5BAE2A32B0B000DFAFFF /* Pair.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 				1B1B2EE62A0D94010066DDD2 /* PrivacyView.swift in Sources */,
 				1B1B2EE42A0D938B0066DDD2 /* TermsView.swift in Sources */,
 				653B5B982A31C47200DFAFFF /* UISliderView.swift in Sources */,
+				653B5BAF2A32B0B000DFAFFF /* Pair.swift in Sources */,
 				1B1B2EE22A0D92210066DDD2 /* LegalInformationView.swift in Sources */,
 				1B0D76DD2A1FF73D007093A1 /* ChallengeQuiz.swift in Sources */,
 				1B0D76E92A227274007093A1 /* QuizTipView.swift in Sources */,

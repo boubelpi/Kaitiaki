@@ -169,7 +169,7 @@ struct StartingPageView: View {
                         //Spacer()
                         /*Spacer()
                          Spacer()*/
-                        ModalLink(destination: CalculatorView()) {
+                        ModalLink(destination: CalculatorView(co2_calc: [ calc_CO2(emails, stream, visio, selEmail, selStream, selVisio, attach_email, attach_stream, attach_visio)])) {
                         Text("Validate")
                         }.foregroundColor(.green)
                             .buttonStyle(.bordered)

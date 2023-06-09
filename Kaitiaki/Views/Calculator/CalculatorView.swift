@@ -8,18 +8,30 @@
 import SwiftUI
 
 struct CalculatorView: View {
-    @State var co2_calc : CO2e = CO2e(ar_of_all: [], ar_of_types: [])
+    @State var co2_calc : [CO2e] = [CO2e(ar_of_all: [], ar_of_types: [], ar_of_strings: [], needed_ar: [])]
     var body: some View {
-        Text("""
-Your usage emits **\(co2_calc.co2_week) kg CO2e per week**. This value includes the use of your devices, the transmission of data and the manufacturing and use of data centers.
+        VStack {
+            Text("""
+Your usage emits **\(round_calc(co2_calc[0].co2_week,2)) kg CO2e per week**. This value includes the use of your devices, the transmission of data and the manufacturing and use of data centers.
 
 But the impact of the manufacturing of your devices is not included.
 
-**The \(co2_calc.co2_week) kg CO2e per week of emissions is equivalent to \(co2_calc.co2_year) kg CO2e per year.
+**The \(round_calc(co2_calc[0].co2_week,2)) kg CO2e per week of emissions is equivalent to \(round_calc(co2_calc[0].co2_year,2)) kg CO2e per year.
 
 Below, your yearly impact is given:**
 """
-        ).padding()
+            ).padding()
+            VStack {
+                ForEach(co2_calc[0].needed_ar) {t in
+                    VStack {
+                        Text(t.s)
+                        Text(String(t.a))
+                    }
+                }
+            }
+            Spacer()
+            Spacer()
+        }
     }
 }
 

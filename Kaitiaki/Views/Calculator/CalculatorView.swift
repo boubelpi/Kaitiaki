@@ -25,10 +25,20 @@ Below, your yearly impact is given:**
                 ForEach(co2_calc[0].needed_ar) {t in
                     VStack {
                         Text(t.s)
-                        Text(String(t.a))
+                        HStack {
+                            ProgressView(value: t.a, total: co2_calc[0].needed_ar[co2_calc[0].needed_ar.count - 1].a)
+                                .accentColor(.green)
+                                .scaleEffect(x: 1, y: 4, anchor: .center)
+                                .padding([.leading,.trailing],10)
+                            Text(round_calc(t.a, 2))
+                            Text("kg CO2e")
+                        }
+                        .padding()
                     }
                 }
             }
+            Spacer()
+            Text("**In general, most of your digital footprint comes from the construction of your devices, not from their use.**")
             Spacer()
             Spacer()
         }

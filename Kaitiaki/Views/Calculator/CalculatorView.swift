@@ -13,11 +13,11 @@ struct CalculatorView: View {
         ScrollView {
             VStack {
                 Text("""
-Your usage emits **\(round_calc(co2_calc[0].co2_week,2)) kg CO2e per week**. This value includes the use of your devices, the transmission of data and the manufacturing and use of data centers.
+Your usage emits **\(round_calc(co2_calc[0].co2_week,1)) kg CO2e per week**. This value includes the use of your devices, the transmission of data and the manufacturing and use of data centers.
 
 But the impact of the manufacturing of your devices is not included.
 
-**The \(round_calc(co2_calc[0].co2_week,2)) kg CO2e per week of emissions is equivalent to \(round_calc(co2_calc[0].co2_year,2)) kg CO2e per year.
+**The \(round_calc(co2_calc[0].co2_week,1)) kg CO2e per week of emissions is equivalent to \(round_calc(co2_calc[0].co2_year,1)) kg CO2e per year.
 
 Below, your yearly impact is given:**
 """
@@ -29,8 +29,8 @@ Below, your yearly impact is given:**
                             HStack {
                                 ProgressView(value: t.a, total: co2_calc[0].needed_ar[co2_calc[0].needed_ar.count - 1].a)
                                     .accentColor(.green)
-                                    .scaleEffect(x: 1, y: 4, anchor: .center)
-                                Text(round_calc(t.a, 2))
+                                    .scaleEffect(x: 1, y: 5, anchor: .center)
+                                Text(round_calc(t.a, 1))
                                 Text("kg CO2e")
                             }
                             .padding()

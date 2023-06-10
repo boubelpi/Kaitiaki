@@ -66,7 +66,7 @@ struct ProfileView: View {
                                             }
                                         )
                                     } //End of Nav Link
-                                   
+                                    
                                 } //END GROUP
                             } // END SECTION
                             
@@ -88,7 +88,7 @@ struct ProfileView: View {
                                                 }
                                             )
                                         } //End of Nav Link
-                        
+                                        
                                     } //Group End
                                     
                                     Group {
@@ -106,7 +106,7 @@ struct ProfileView: View {
                                                 } //End icon
                                             )
                                         } //End of Nav Link
-                                                                                
+                                        
                                     } //Group End
                                     
                                 } //Fin de Group
@@ -349,16 +349,16 @@ struct ProfileView: View {
                                     //Toggle(isOn: $settings.isInterfaceSoundsEnabled) {}
                                 }
                             } //Fin de section
-                                                   
+                            
                         } //End of VStack
                     }
                     
                     .toolbar {
-                    ToolbarItem {
-                    Button(
-                    action: {isPresented = false},
-                    label: {Text("Exit")})
-                    }
+                        ToolbarItem {
+                            Button(
+                                action: {isPresented = false},
+                                label: {Text("Exit")})
+                        }
                     }
                     .padding()
                 } //Fin de la Nav View

@@ -16,9 +16,17 @@ struct PopupView: View {
              """).multilineTextAlignment(.leading)
                 .padding()
             HStack {
+                Spacer()
                 Image(systemName: "info")
                     .background(Circle().foregroundColor(.gray).frame(width: 30, height: 30)).multilineTextAlignment(.leading)
-                Spacer(minLength: 3)
+                Spacer(minLength: 51)
+                Spacer(minLength: 51)
+                Spacer().frame(width: 141, height: 10)
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
             }
             Text("""
             With regards to digital devices, these are the most recurrent uses on peoples’ devices (laptop, desktop, smartphone, tablet, phone and TV).

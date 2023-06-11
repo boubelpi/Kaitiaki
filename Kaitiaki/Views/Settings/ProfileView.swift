@@ -22,14 +22,14 @@ struct ProfileView: View {
     
     var body: some View {
         NavigationView {
-                Text("Welcome Page")
-                    .toolbar {
-                        ToolbarItem (placement: .navigationBarTrailing){
-                            Button(action:{isPresented = true},
-                                   label: { Image(systemName: "gear") })
-                        }
+            Text("Welcome Page")
+                .toolbar {
+                    ToolbarItem (placement: .navigationBarTrailing){
+                        Button(action:{isPresented = true},
+                               label: { Image(systemName: "gear") })
                     }
-                        
+                }
+            
             // Group {
                 .sheet(isPresented: $isPresented)
             {
@@ -368,7 +368,7 @@ struct ProfileView: View {
     }
     //fin de test
     /*
-
+     
      */
     
     struct ProfileView_Previews: PreviewProvider {

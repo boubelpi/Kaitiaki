@@ -70,6 +70,7 @@
 		653B5BAF2A32B0B000DFAFFF /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B5BAE2A32B0B000DFAFFF /* Pair.swift */; };
 		653B5BB12A32B5E700DFAFFF /* ProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B5BB02A32B5E700DFAFFF /* ProgressViewStyle.swift */; };
 		653B5BB32A32C1F000DFAFFF /* PopUpConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B5BB22A32C1F000DFAFFF /* PopUpConverterView.swift */; };
+		653B5BB52A360B0500DFAFFF /* EquipmentTipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B5BB42A360B0500DFAFFF /* EquipmentTipsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,6 +137,7 @@
 		653B5BAE2A32B0B000DFAFFF /* Pair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
 		653B5BB02A32B5E700DFAFFF /* ProgressViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewStyle.swift; sourceTree = "<group>"; };
 		653B5BB22A32C1F000DFAFFF /* PopUpConverterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpConverterView.swift; sourceTree = "<group>"; };
+		653B5BB42A360B0500DFAFFF /* EquipmentTipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentTipsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 				1BB09C3A2A2E7D7900FA62A7 /* SubjectTipsListView.swift */,
 				1B3BD33C2A2E85DE007FA1CC /* TipsListView.swift */,
 				1B3BD33E2A3286BE007FA1CC /* TestViewTampon.swift */,
+				653B5BB42A360B0500DFAFFF /* EquipmentTipsView.swift */,
 			);
 			path = QuizAndTips;
 			sourceTree = "<group>";
@@ -472,6 +475,7 @@
 				1B1B2EE82A0D98FF0066DDD2 /* EmailView.swift in Sources */,
 				1B0D76DB2A1FF618007093A1 /* ChallengeCategory.swift in Sources */,
 				653B5B9F2A3218EB00DFAFFF /* DevicesSelected.swift in Sources */,
+				653B5BB52A360B0500DFAFFF /* EquipmentTipsView.swift in Sources */,
 				653B5BA52A326C5100DFAFFF /* CalculatorAlgorithm.swift in Sources */,
 				1B0D76E32A226084007093A1 /* ChallengeListView.swift in Sources */,
 				1B1B2EBE2A0AF1050066DDD2 /* DisconnectView.swift in Sources */,

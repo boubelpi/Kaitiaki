@@ -22,6 +22,11 @@ struct PlayWithDataView: View {
         Text("-21 % : It is the share of computer equipment in the electricity consumption of an office company(the figure is growing")
             .font(.body)
             .padding(.top, 10)
+        Text("2/3 of this consumption occurs during periods of inactivity.")
+            .font(.body)
+            .padding(.top, 10)
+        Text("")
+        
     }
 }
 

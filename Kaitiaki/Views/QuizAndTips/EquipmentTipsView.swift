@@ -275,7 +275,7 @@ struct EquipmentTipsView: View {
                         .padding(.top, 10)
                 } //End of Group
                 Group {
-                    Text("  Remove all unnecessary software. They often slow down computers.")
+                    Text("Remove all unnecessary software. They often slow down computers.")
                         .font(.body)
                         .padding(.top, 10)
                     Text("Repair and reuse before throwing away (In most cases, our equipment can be repaired).")
@@ -291,7 +291,132 @@ struct EquipmentTipsView: View {
                         .font(.body)
                         .padding(.top, 10)
                 }//End of Group
+                Group {
+                    Text("Favour the use of open source technologies: this software is created and improved by a community of developers who ensure its independence and are very reactive to bugs or security flaws. What's more, they are free.")
+                        .font(.body)
+                        .padding(.top, 10)
+                    Text("Videoconferencing virtually brings people together in the same place, with no loss of transport time and no fuel consumption, so limiting greenhouse gas emissions. The greater the number of participants in a videoconference and the greater the average distance per participant, the more attractive a remote meeting is, especially if there is no public transport. Beware, however, of the proliferation of equipment, the transfer of pollution and consumption (from the office to the home) and the increase in local car journeys.")
+                    Text("(Source: ADEME)")
+                        .font(.body)
+                        .padding(.top, 10)
+                        .italic()
+                } //End of Group
+                Group {
+                    Text("Choose a more responsible package and operator")
+                        .font(.body)
+                        .padding(.top, 10)
+                    Text("Use public wifi access rather than the 4G network")
+                        .font(.body)
+                        .padding(.top, 10)
+                   Text("Limit the amount of cellular data used by your applications")
+                        .font(.body)
+                        .padding(.top, 10)
+                    Text("Limit the amount of time you use energy-hungry social networks")
+                        .font(.body)
+                        .padding(.top, 10)
+                    Text("Adopt more environmentally-friendly devices")
+                        .font(.body)
+                        .padding(.top, 10)
+                    Text("Use an open operating system (OS)")
+                        .font(.body)
+                        .padding(.top, 10)
+                   Text("Deactivate automatic synchronisation")
+                        .font(.body)
+                        .padding(.top, 10)
+                }//End of Group
             } //Fin de VStack
+            VStack {
+                Group {
+                    Text("Smartphone:")
+                        .font(.title)
+                        .foregroundColor(.accentColor)
+                        .bold()
+                    Text("Source: Fruggr")
+                        .italic()
+                    Text("Activer le mode sombre sur son smartphone")
+                        .font(.body)
+                        .padding(.top, 10)
+                    Text("Désactiver ses données cellulaires par défaut:")
+                        .font(.body)
+                        .padding(.top, 10)
+                    Text("Garder son smartphone le plus longtemps possible")
+                        .font(.body)
+                        .padding(.top, 10)
+                    Text("Trier régulièrement les médias et fichiers enregistrés sur son smartphone")
+                        .font(.body)
+                        .padding(.top, 10)
+                }//End of Group
+                Group {
+                    Text("Privilégiez l’envoie de SMS plutôt qu’une messagerie instantanée ou un mail")
+                        .font(.body)
+                        .padding(.top, 10)
+                    Text("Activer le mode avion des que l’on utilise pas son téléphone")
+                        .font(.body)
+                        .padding(.top, 10)
+                    Text("Charger sa batterie qu’entre 20% et 80 %")
+                        .font(.body)
+                        .padding(.top, 10)
+                    Text("Supprimer les podcasts et e books écoutés ou lus")
+                        .font(.body)
+                        .padding(.top, 10)
+                    Text("Stocker ses fichiers, notes et images sur son téléphone et non le cloud")
+                        .font(.body)
+                        .padding(.top, 10)
+                    Text("Télécharger sa musique sur son tel pour l’écouter hors connexion")
+                        .font(.body)
+                        .padding(.top, 10)
+                }//End of Group
+                } //End of VStack
+            VStack {
+                Group {
+                    Text("Video:")
+                        .font(.title)
+                        .foregroundColor(.accentColor)
+                        .bold()
+                    Text("Reducing the quality of videos watched online")
+                        .font(.body)
+                        .padding(.top, 10)
+                    Text("(Source: Frugggr)")
+                        .italic()
+                } //End of Group
+                Group {
+                    Text("Reconditioning/recycling/repair:")
+                        .font(.title)
+                        .foregroundColor(.accentColor)
+                        .bold()
+                    Text("Buying reconditioned or second-hand equipment")
+                        .font(.body)
+                        .padding(.top, 10)
+                    Text("Recycle your electronic devices")
+                        .font(.body)
+                        .padding(.top, 10)
+                    Text("Repairing electronic devices instead of throwing them away")
+                        .font(.body)
+                        .padding(.top, 10)
+                    Text("Donate old electronics instead of throwing them away")
+                        .font(.body)
+                        .padding(.top, 10)
+                    Text("Sell your electronics instead of throwing them away")
+                }//End of Group
+            }//End of VStack
+            
+            VStack {
+                Group {
+                    Text("Applications:")
+                        .font(.title)
+                        .padding(.top, 10)
+                    Text("Use messaging applications that respect privacy")
+                        .font(.body)
+                        .padding(.top, 10)
+                    Text("Disable background updates for unnecessary applications")
+                        .font(.body)
+                        .padding(.top, 10)
+                    Text("Uninstalling applications you don't use")
+                        .font(.body)
+                        .padding(.top, 10)
+                    Text("block unnecessary applications from being backed up to the cloud")
+                }//End of Group
+            }//End of VStack
         }//Fin de ScrollView
         //.padding()
     } //Fin du body

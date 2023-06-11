@@ -141,7 +141,7 @@ struct SettingsFinalView: View {
                             }
                         )
                     }
-                    }
+                }
                 .padding()
             }
         }//Fin section settings

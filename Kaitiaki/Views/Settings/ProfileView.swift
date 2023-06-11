@@ -38,7 +38,7 @@ struct ProfileView: View {
                     // Text("My settings")
                     
                     //Test on integre tout ce qui etait dans profile avant
-                    List {
+                    ScrollView {
                         VStack {
                             Group {
                                 HStack {

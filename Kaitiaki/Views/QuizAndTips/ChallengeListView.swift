@@ -13,8 +13,9 @@ struct ChallengeListView: View {
         Subject.all.filter { $0.category.category == category }
     }
     var body: some View {
+        NavigationView {
         VStack {
-            ScrollView {
+            ScrollView() {
                 VStack {
                     ForEach(challenges, id: \.self) { challenge in
                         NavigationLink(destination: ChallengeQuizView(quiz: challenge.quiz)) {
@@ -24,14 +25,14 @@ struct ChallengeListView: View {
                                 .foregroundColor(.white)
                                 .padding()
                                 .frame(maxWidth: .infinity)
-                                .background(
-                                    Color.blue
-                                        .cornerRadius(15)
-                                )
-                                //.foregroundColor(.accentColor)
+                                .background(Color.blue)
+                            //.foregroundColor(.accentColor)
                                 .padding()
+                          //  Spacer(minLength: 25)
                         }
+                        Spacer()
                     }
+                }
                 }
             }
         }

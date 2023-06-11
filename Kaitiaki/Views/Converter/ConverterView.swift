@@ -12,7 +12,7 @@ struct ConverterView: View {
     var body: some View {
         ScrollView {
             VStack {
-                Text("Easily view an amount of CO2e")
+                Text("CO2 converter")
                     .font(.title)
                 Spacer(minLength: 21)
                 Text("By using the converter below, we can have the equivalent of this CO2 quantity in different areas.")

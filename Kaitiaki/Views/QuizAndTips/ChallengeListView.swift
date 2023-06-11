@@ -6,36 +6,33 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct ChallengeListView: View {
     var category: ChallengeCategory.Category
+    private let grid = [GridItem](repeating: .init(.flexible()), count: 2)
     var challenges: [Subject] {
         Subject.all.filter { $0.category.category == category }
     }
     var body: some View {
-        NavigationView {
-        VStack {
-            ScrollView() {
-                VStack {
-                    ForEach(challenges, id: \.self) { challenge in
-                        NavigationLink(destination: ChallengeQuizView(quiz: challenge.quiz)) {
-                            Text(challenge.name.capitalized)
-                                .bold()
-                                .font(.title3)
-                                .foregroundColor(.white)
-                                .padding()
-                                .frame(maxWidth: .infinity)
-                                .background(Color.blue)
-                            //.foregroundColor(.accentColor)
-                                .padding()
-                          //  Spacer(minLength: 25)
-                        }
-                        Spacer()
+        ScrollView {
+            LazyVGrid(columns: grid) {
+                ForEach(challenges, id: \.self) { challenge in
+                    NavigationLink(destination: ChallengeQuizView(quiz: challenge.quiz)) {
+                        Text(challenge.name.capitalized)
+                            .foregroundColor(.white)
                     }
+                    .background(RoundedRectangle(cornerRadius: 15)
+                        .foregroundColor(.cyan)
+                        .padding(15)
+                        .multilineTextAlignment(.leading)
+                        .frame(width: UIScreen.main.bounds.width / 2, height: 141)
+                    )
+                    .padding(46)
+                    //  Spacer(minLength: 25)
                 }
-                }
+                Spacer(minLength: 41)
             }
-        }
+    }
     }
 }
-

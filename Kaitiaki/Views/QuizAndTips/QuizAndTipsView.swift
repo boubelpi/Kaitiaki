@@ -19,6 +19,8 @@ struct QuizAndTipsView: View {
                         SubjectQuizListView()
                     case .tips:
                         SubjectTipsListView()
+                    default:
+                        PlayWithDataView()
                     }
                     
                 //la scrollview pousse le contenu deja tout en haut. ps besoin de spacer

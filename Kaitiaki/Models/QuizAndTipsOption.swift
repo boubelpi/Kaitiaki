@@ -11,6 +11,7 @@
 enum QuizAndTipsOption: String, CaseIterable {
     case quiz = "Quiz"
     case tips = "Tips"
+    case game = "Game with data"
 }
 
 

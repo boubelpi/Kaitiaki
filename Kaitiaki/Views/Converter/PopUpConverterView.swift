@@ -10,43 +10,44 @@ import SwiftUI
 struct PopUpConverterView: View {
     @State var txt : String = ""
     var body: some View {
-        Spacer()
-        Spacer()
-        HStack {
-            VStack {
-                Text(String(find_water(txt)))
-                    .font(.largeTitle)
-                Text("liters of bottled water")
+        ScrollView {
+            Text("CO2 converter").font(.title)
+            VStack(spacing: 30) {
+                VStack(spacing: 20) {
+                    Text(String(find_water(txt)))
+                        .font(.largeTitle)
+                    Text("liters of bottled water")
+                }.background(RoundedRectangle(cornerRadius: 15).fill(Color(UIColor.systemGray5)).frame(width: 331, height: 103))
+                    .frame(width: 331, height: 103)
+                VStack(spacing: 20) {
+                    Text(String(find_voiture(txt)))
+                        .font(.largeTitle)
+                    Text("km by car")
+                }.background(RoundedRectangle(cornerRadius: 15).fill(Color(UIColor.systemGray5)).frame(width: 331, height: 103))
+                    .frame(width: 331, height: 103)
+                VStack(spacing: 20) {
+                    Text(String(find_tshirts(txt)))
+                        .font(.largeTitle)
+                    Text("t shirts")
+                }.background(RoundedRectangle(cornerRadius: 15).fill(Color(UIColor.systemGray5)).frame(width: 331, height: 103))
+                    .frame(width: 331, height: 103)
+                VStack(spacing: 20) {
+                    Text(String(find_boeuf(txt))).font(.largeTitle)
+                    Text("meal with beef")
+                }
+                .background(RoundedRectangle(cornerRadius: 15).fill(Color(UIColor.systemGray5)).frame(width: 331, height: 103))
+                .frame(width: 331, height: 103)
+                VStack(spacing: 20) {
+                    Text(String(find_biere(txt))).font(.largeTitle).frame(alignment: .trailing)
+                    Text("liters of beer")
+                }
+                .background(RoundedRectangle(cornerRadius: 15).fill(Color(UIColor.systemGray5)).frame(width: 331, height: 103))
+                .frame(width: 331, height: 103)
+                Spacer()
+                Spacer()
             }
-            .background(Rectangle().fill(Color.accentColor))
-            VStack {
-                Text(String(find_voiture(txt)))
-                    .font(.largeTitle)
-                Text("km by car")
-            }
-            .background(Rectangle().fill(Color.accentColor))
-            VStack {
-                Text(String(find_tshirts(txt)))
-                    .font(.largeTitle)
-                Text("t shirts")
-            }
-            .background(Rectangle().fill(Color.accentColor))
+            .multilineTextAlignment(.leading)
         }
-        Spacer(minLength: 0.5)
-        HStack {
-            VStack {
-                Text(String(find_boeuf(txt))).font(.largeTitle)
-                Text("meal with beef")
-            }
-            .background(Rectangle().fill(Color.accentColor))
-            VStack {
-                Text(String(find_biere(txt))).font(.largeTitle)
-                Text("liters of beer")
-            }
-            .background(Rectangle().fill(Color.accentColor))
-        }
-        Spacer()
-        Spacer()
     }
 }
 

@@ -31,9 +31,10 @@ struct ConverterView: View {
                 .background(Rectangle().fill(Color.gray))
                 Spacer()
                 ModalLink(destination: PopUpConverterView(txt : txt)) {
-                    Text("validate").foregroundColor(.black)
-                }
-                .background(RoundedRectangle(cornerRadius: 15).foregroundColor(.green).frame(width: 100, height: 70))
+                    Text("Validate")
+                }.foregroundColor(.green)
+                    .buttonStyle(.bordered)
+                    .tint(.accentColor)
                 Spacer()
                 Spacer()
                 Spacer()

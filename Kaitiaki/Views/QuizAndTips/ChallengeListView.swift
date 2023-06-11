@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import UIKit
 
 struct ChallengeListView: View {
     var category: ChallengeCategory.Category
@@ -23,7 +22,7 @@ struct ChallengeListView: View {
                             .foregroundColor(.white)
                     }
                     .background(RoundedRectangle(cornerRadius: 15)
-                        .foregroundColor(Color.accentColor)
+                        .foregroundColor(category == .internet ? Color.green : Color.accentColor)
                         .padding(15)
                         .multilineTextAlignment(.leading)
                         .frame(width: UIScreen.main.bounds.width / 2, height: 141)

@@ -108,7 +108,8 @@ struct EquipmentTipsView: View {
                         .font(.body)
                         .padding(.top, 10)
                 }//End of Group
-                
+            } //End of VStack
+            VStack {
                 Group {
                     Text("Regularly sort through your email and delete all unnecessary messages.")
                         .font(.body)
@@ -228,7 +229,8 @@ struct EquipmentTipsView: View {
                         .padding(.top, 10)
                     
                 } //End of Group
-                
+            } //End of VStack
+            VStack {
                 Group {
                     Text("Use only the audio and not the camera for video conferences")
                         .font(.body)

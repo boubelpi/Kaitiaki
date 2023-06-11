@@ -23,12 +23,12 @@ struct ChallengeListView: View {
                             .foregroundColor(.white)
                     }
                     .background(RoundedRectangle(cornerRadius: 15)
-                        .foregroundColor(.cyan)
+                        .foregroundColor(Color.accentColor)
                         .padding(15)
                         .multilineTextAlignment(.leading)
                         .frame(width: UIScreen.main.bounds.width / 2, height: 141)
                     )
-                    .padding(46)
+                    .padding(44)
                     //  Spacer(minLength: 25)
                 }
                 Spacer(minLength: 41)

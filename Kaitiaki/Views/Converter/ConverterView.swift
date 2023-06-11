@@ -6,18 +6,17 @@
 //
 
 import SwiftUI
-import ModalView
 
 struct ConverterView: View {
     @State var txt : String = ""
     var body: some View {
-        ModalPresenter {
+        ScrollView {
             VStack {
                 Text("Easily view an amount of CO2e")
                     .font(.title)
-                Spacer()
+                Spacer(minLength: 21)
                 Text("By using the converter below, we can have the equivalent of this CO2 quantity in different areas.")
-                Spacer()
+                Spacer(minLength: 19)
                 VStack {
                     Text("Enter an amount of CO2e below")
                     TextField("", text : $txt)
@@ -30,14 +29,42 @@ struct ConverterView: View {
                 }
                 .background(Rectangle().fill(Color.gray))
                 Spacer()
-                ModalLink(destination: PopUpConverterView(txt : txt)) {
-                    Text("Validate")
-                }.foregroundColor(.green)
-                    .buttonStyle(.bordered)
-                    .tint(.accentColor)
                 Spacer()
-                Spacer()
-                Spacer()
+                VStack(spacing: 14) {
+                    VStack(spacing: 4) {
+                        Text(String(find_water(txt)))
+                            .font(.largeTitle)
+                        Text("liters of bottled water")
+                    }.background(RoundedRectangle(cornerRadius: 15).fill(Color(UIColor.systemGray5)).frame(width: 331, height: 103))
+                        .frame(width: 331, height: 103)
+                    VStack(spacing: 4) {
+                        Text(String(find_voiture(txt)))
+                            .font(.largeTitle)
+                        Text("km by car")
+                    }.background(RoundedRectangle(cornerRadius: 15).fill(Color(UIColor.systemGray5)).frame(width: 331, height: 103))
+                        .frame(width: 331, height: 103)
+                    VStack(spacing: 4) {
+                        Text(String(find_tshirts(txt)))
+                            .font(.largeTitle)
+                        Text("t shirts")
+                    }.background(RoundedRectangle(cornerRadius: 15).fill(Color(UIColor.systemGray5)).frame(width: 331, height: 103))
+                        .frame(width: 331, height: 103)
+                    VStack(spacing: 4) {
+                        Text(String(find_boeuf(txt))).font(.largeTitle)
+                        Text("meal with beef")
+                    }
+                    .background(RoundedRectangle(cornerRadius: 15).fill(Color(UIColor.systemGray5)).frame(width: 331, height: 103))
+                    .frame(width: 331, height: 103)
+                    VStack(spacing: 4) {
+                        Text(String(find_biere(txt))).font(.largeTitle).frame(alignment: .trailing)
+                        Text("liters of beer")
+                    }
+                    .background(RoundedRectangle(cornerRadius: 15).fill(Color(UIColor.systemGray5)).frame(width: 331, height: 103))
+                    .frame(width: 331, height: 103)
+                    Spacer()
+                    Spacer()
+                }
+                .multilineTextAlignment(.leading)
             }
         }
     }

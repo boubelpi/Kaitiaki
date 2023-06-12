@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import RAMAnimatedTabBarController
+
 
 struct TabBarView: View {
     var body: some View {
@@ -29,7 +31,6 @@ struct TabBarView: View {
               ProfileView()
                 .tabItem {
                     Label("Profile", systemImage: "person")
-
                 }
         }
     }

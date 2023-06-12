@@ -22,7 +22,7 @@ struct ProfileView: View {
     
     var body: some View {
         NavigationView {
-            Text("Welcome Page")
+            MyProfileView()
                 .toolbar {
                     ToolbarItem (placement: .navigationBarTrailing){
                         Button(action:{isPresented = true},

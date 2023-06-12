@@ -17,8 +17,7 @@ struct MyProfileView: View {
                     .frame(alignment: .leading)
                     .font(.system(size: 25))
                 Spacer(minLength: 91)
-                Spacer()
-                Spacer(minLength: 174)
+                Spacer(minLength: 141)
             }
             VStack {
                 HStack {
@@ -51,7 +50,7 @@ struct MyProfileView: View {
                         Spacer()
                     }
                     HStack {
-                        Text("0.00 kg per week; 0.00 kg per year.").frame(alignment: .leading).font(.system(size: 15, weight: .medium))
+                        Text("\(round_calc(ProfileResults.singletone.LastCalcResultWeek,2)) kg per week; \(round_calc(ProfileResults.singletone.LastCalcResultYear,2)) kg per year.").frame(alignment: .leading).font(.system(size: 15, weight: .medium))
                         Spacer()
                         Spacer()
                         Spacer()
@@ -83,7 +82,7 @@ struct MyProfileView: View {
                         Spacer()
                         Spacer()
                         Spacer(minLength: 69)
-                        Spacer(minLength: 174)
+                        Spacer(minLength: 82)
                     }
                 }
                 .foregroundColor(.white)

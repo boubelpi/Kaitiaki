@@ -10,7 +10,7 @@ import SwiftUI
 struct PlayWithDataView: View {
     var body: some View {
         Group {
-            Text("The following is extracted from: ADEME: « ECO-Responsable au bureau » « Actions efficaces et bonnes résolutions»")
+            Text("The following is extracted from: ADEME:")
             Text("-15,000 KM: this is the average distance travelled by a piece of digital data (email, download,video,web request...)")
                 .font(.body)
                 .padding(.top, 10)
@@ -38,10 +38,22 @@ struct PlayWithDataView: View {
                 .padding(.top, 20)
         }
         Group {
-            
-            Text(" »")
-                .italic()
+            Text("The following is extracted from Ecoist Club:")
                 .font(.body)
+                .padding(.top, 20)
+            Text("-If you keep your smartphone during a year, your GHG impact will be 33 kg of CO2 per year.")
+                .padding(.top, 20)
+            Text("-In 88% of renewal cases, devices are still in working condition. Extending their lifespan reduces their environmental impact.")
+                .padding(.top, 20)
+            Text("-If you spend 1 hour per week browsing social media using your mobile internet condition, your carbon footprint is 0.23 kg of CO2 per year.")
+                .padding(.top, 20)
+        }//End of Group
+        Group{
+            Text("-If you download or upload 1 photo per week using your mobile internet connection, your carbon footprint is 0.01 kg of CO2 per year.")
+            .padding(.top, 20)
+            Text("-If you download or upload 100 photos per week using your mobile internet connection, your carbon footprint is 0.01 kg of CO2 per year.")
+            .padding(.top, 20)
+            Text("-Studies show that humans need a minimum of 19 minutes per day without technological interference to establish a sense of trust.")
                 .padding(.top, 20)
         }//End of Group
         Group {

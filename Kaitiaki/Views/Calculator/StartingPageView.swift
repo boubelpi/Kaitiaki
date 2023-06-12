@@ -61,6 +61,7 @@ struct StartingPageView: View {
                
                   We will then compare the impact of your usages to the manufacturing of your appliances.
                """)
+                        Text("(Source: ADEME)")
                         .padding()
                         HStack {
                             Spacer()

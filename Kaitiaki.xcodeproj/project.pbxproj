@@ -333,7 +333,6 @@
 			children = (
 				653B5B922A30CEC900DFAFFF /* Calculator */,
 				653B5B8A2A2DD83B00DFAFFF /* Converter */,
-				1BB09C112A2CE9A900FA62A7 /* Divers */,
 				1B0D76E52A226F37007093A1 /* QuizAndTips */,
 				1B0D76E42A226F17007093A1 /* Quiz */,
 				1B1B2F3F2A1114BD0066DDD2 /* Tabs */,
@@ -348,13 +347,6 @@
 				1B0E00282A08EF30000B6D29 /* KaitiakiApp.swift */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		1BB09C112A2CE9A900FA62A7 /* Divers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Divers;
 			sourceTree = "<group>";
 		};
 		653B5B8A2A2DD83B00DFAFFF /* Converter */ = {

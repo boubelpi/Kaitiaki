@@ -13,7 +13,7 @@ struct EquipmentTipsView: View {
         ScrollView {
             VStack {
                 Group {
-                    Text("Reducing the energy consumption of computers, tablets and mobile phones:")
+                    Text("Reducing the energy consumption of computers, tablets and mobile phones (Source: ADEME):")
                         .font(.title)
                         .foregroundColor(.accentColor)
                         .bold()
@@ -37,7 +37,7 @@ struct EquipmentTipsView: View {
                 }//End of Group
                 
                 Group {
-                    Text("Extend the life of equipment:")
+                    Text("Extend the life of equipment(Source: ADEME):")
                         .font(.title)
                         .foregroundColor(.accentColor)
                         .bold()
@@ -50,7 +50,7 @@ struct EquipmentTipsView: View {
                         .font(.body)
                         .padding(.top, 10)
                     
-                    Text("Use sobre equipment:")
+                    Text("Use sobre equipment (Source: ADEME):")
                         .font(.title)
                         .foregroundColor(.accentColor)
                         .bold()
@@ -66,7 +66,7 @@ struct EquipmentTipsView: View {
                     Text("There are a number of environmental labels that identify high-performance, energy-efficient equipment: European Ecolabel, EPEAT, Nordic Ecolabel, Blue Angel and TCO.")
                         .font(.body)
                         .padding(.top, 10)
-                    Text("Mails: optimising reception and dispatch:")
+                    Text("Mails: optimising reception and dispatch (Source: ADEME):")
                         .font(.title)
                         .foregroundColor(.accentColor)
                         .bold()
@@ -129,7 +129,7 @@ struct EquipmentTipsView: View {
                     Text("Clean out your mailbox regularly, especially if it's webmail: you're protecting yourself from unwanted use, and you're lightening the load on data centres and your equipment.")
                 }//End of Group
                 Group {
-                    Text("6 Web queries: keep it short and simple:")
+                    Text("Web queries: keep it short and simple (Source: ADEME):")
                         .font(.title)
                         .foregroundColor(.accentColor)
                         .bold()
@@ -153,8 +153,9 @@ struct EquipmentTipsView: View {
                         .padding(.top, 10)
                 } //End of Group
                 Group {
-                    Text("Browsers: Varying energy consumption:")
+                    Text("Browsers: Varying energy consumption (Source: ADEME):")
                         .font(.title)
+                        .padding(.top, 10)
                         .foregroundColor(.accentColor)
                         .bold()
                     Text("Some browsers consume more energy than others. The Web Energy Archive* study (* WEA carried out by the Green Code Lab, 2013) for ADEME names Chrome as one of the most energy-hungry (27 Wh per 1,000 pages viewed) ahead of Internet Explorer and Firefox. However, if you install a new browser on your computer, don't uninstall Internet Explorer, which is required to display certain programmes on Windows.")
@@ -165,7 +166,7 @@ struct EquipmentTipsView: View {
                         .padding(.top, 10)
                 }//End of Group
                 Group {
-                    Text("Data storage:")
+                    Text("Data storage (Source: ADEME):")
                         .font(.title)
                         .foregroundColor(.accentColor)
                         .bold()
@@ -190,7 +191,7 @@ struct EquipmentTipsView: View {
                     Text("Store locally rather than in the cloud (use of datacentres): online storage of emails, photos, videos, music and other documents requires constant to-ing and fro-ing between the user's terminal and the servers. Transporting data over the Internet consumes twice as much energy as storing it for a year. We therefore need to encourage as far as possible the local storage and use of our data.")
                 }//End of Group
                 Group {
-                    Text("Opting for eco-communication:")
+                    Text("Opting for eco-communication(Source: ADEME):")
                         .font(.title)
                         .foregroundColor(.accentColor)
                         .bold()
@@ -220,7 +221,7 @@ struct EquipmentTipsView: View {
                         .padding(.top, 10)
                 } //End of group
                 Group {
-                    Text("Acessibility")
+                    Text("Acessibility (Source: ADEME):")
                         .font(.title)
                         .foregroundColor(.accentColor)
                         .bold()
@@ -238,7 +239,7 @@ struct EquipmentTipsView: View {
                 } //End of Group
                 
                 Group {
-                    Text("Extending the life of appliances:")
+                    Text("Extending the life of appliances (Source: ADEME):")
                         .font(.title)
                         .foregroundColor(.accentColor)
                         .bold()
@@ -257,7 +258,7 @@ struct EquipmentTipsView: View {
                 }//End of Group
                 
                 Group {
-                    Text("Miscellaneous")
+                    Text("Miscellaneous (Source: ADEME)")
                         .font(.title)
                         .foregroundColor(.accentColor)
                         .bold()
@@ -327,12 +328,10 @@ struct EquipmentTipsView: View {
             } //Fin de VStack
             VStack {
                 Group {
-                    Text("Smartphone:")
+                    Text("Smartphone(Source: Fruggr):")
                         .font(.title)
                         .foregroundColor(.accentColor)
                         .bold()
-                    Text("Source: Fruggr")
-                        .italic()
                     Text("Activer le mode sombre sur son smartphone")
                         .font(.body)
                         .padding(.top, 10)
@@ -369,18 +368,16 @@ struct EquipmentTipsView: View {
                 } //End of VStack
             VStack {
                 Group {
-                    Text("Video:")
+                    Text("Video(Source: Frugggr):")
                         .font(.title)
                         .foregroundColor(.accentColor)
                         .bold()
                     Text("Reducing the quality of videos watched online")
                         .font(.body)
                         .padding(.top, 10)
-                    Text("(Source: Frugggr)")
-                        .italic()
                 } //End of Group
                 Group {
-                    Text("Reconditioning/recycling/repair:")
+                    Text("Reconditioning/recycling/repair (Source: ADEME):")
                         .font(.title)
                         .foregroundColor(.accentColor)
                         .bold()
@@ -402,9 +399,10 @@ struct EquipmentTipsView: View {
             
             VStack {
                 Group {
-                    Text("Applications:")
+                    Text("Applications(Source: ADEME):")
                         .font(.title)
-                        .padding(.top, 10)
+                        .foregroundColor(.accentColor)
+                        .bold()
                     Text("Use messaging applications that respect privacy")
                         .font(.body)
                         .padding(.top, 10)

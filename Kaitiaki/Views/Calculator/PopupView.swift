@@ -33,6 +33,7 @@ struct PopupView: View {
 
             There might be more but we cannot calculate everything at this stage. We also lack data about social media and other things.
             """)
+            Text("(Source: ADEME)")
             .padding()
             Spacer()
             Spacer()

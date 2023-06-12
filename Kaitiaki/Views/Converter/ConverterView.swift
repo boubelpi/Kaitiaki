@@ -16,6 +16,7 @@ struct ConverterView: View {
                     .font(.title)
                 Spacer(minLength: 21)
                 Text("By using the converter below, we can have the equivalent of this CO2 quantity in different areas.")
+                Text("(Source: ADEME)")
                 Spacer(minLength: 19)
                 VStack {
                     Text("Enter an amount of CO2e below")

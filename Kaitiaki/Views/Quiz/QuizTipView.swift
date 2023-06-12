@@ -16,19 +16,23 @@ struct QuizTipView: View {
     }
     @ViewBuilder
     private func tipView() -> some View {
-        switch true {
-        case !answer.isEmpty && (answer != quiz.answer):
-            Text("Incorrect")
-                .font(.title)
-                .foregroundColor(.red)
-            Text(quiz.tip)
-        case answer == quiz.answer:
-            Text("Correct")
-                .font(.title)
-                .foregroundColor(.green)
-            Text(quiz.tip)
-        default: EmptyView()
-        }
+            switch true {
+            case !answer.isEmpty && (answer != quiz.answer):
+                Text("Incorrect")
+                    .font(.title)
+                    .foregroundColor(.red)
+                ScrollView {
+                    Text(quiz.tip)
+                }
+            case answer == quiz.answer:
+                Text("Correct")
+                    .font(.title)
+                    .foregroundColor(.green)
+                ScrollView {
+                    Text(quiz.tip)
+                }
+            default: EmptyView()
+            }
     }
 }
 

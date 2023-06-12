@@ -10,16 +10,15 @@ import SwiftUI
 struct PlayWithDataView: View {
     var body: some View {
         Group {
-            Text("-Around 200 days a year are spent in the office")
-            // Color("AccentColor2") it works
-                .font(.body)
-                .padding(.top, 10)
+            Text("The following is extracted from: ADEME: « ECO-Responsable au bureau » « Actions efficaces et bonnes résolutions»")
             Text("-15,000 KM: this is the average distance travelled by a piece of digital data (email, download,video,web request...)")
                 .font(.body)
                 .padding(.top, 10)
             Text("-120 to 140 kg: of waste per year is produced by an employee in the tertiary sector, including 3⁄4 kg of paper")
                 .font(.body)
                 .padding(.top, 10)
+        }//End of Group
+        Group {
             Text("-21 % : It is the share of computer equipment in the electricity consumption of an office company(the figure is growing")
                 .font(.body)
                 .padding(.top, 10)
@@ -37,13 +36,16 @@ struct PlayWithDataView: View {
             Text("-A laser printer is often switched on all day because of the preheating required each time it is switched on. However, it is more economical than an inkjet printer when it comes to large prints.")
                 .font(.body)
                 .padding(.top, 20)
-            Text("Source: ADEME: « ECO-Responsable au bureau » « Actions efficaces et bonnes résolutions »")
+        }
+        Group {
+            
+            Text(" »")
                 .italic()
                 .font(.body)
                 .padding(.top, 20)
         }//End of Group
         Group {
-            Text("mettre soit les sliders de ecoist club, soit les données extraites des sliders")//check saviez vous 2
+            //Text("mettre soit les sliders de ecoist club, soit les données extraites des sliders")//check saviez vous 2
         }
     }
 }

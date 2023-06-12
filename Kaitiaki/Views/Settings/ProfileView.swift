@@ -46,11 +46,11 @@ struct ProfileView: View {
                                         .foregroundColor(.blue)
                                     Text("Log in")
                                     Spacer()
-                                        .padding()
+                                    .padding()
                                 } //END HSTACK
                             } //END GROUP
                             
-                            Section(header: Text("YOUR CHALLENGES")) {
+                            /* Section(header: Text("YOUR CHALLENGES")) {
                                 Group {
                                     NavigationLink(destination: RemindersView()) {
                                         Label(
@@ -61,18 +61,17 @@ struct ProfileView: View {
                                                 /* .resizable()*/
                                                 /*.scaledToFit()*/
                                                 .foregroundColor(.blue)
-                                                Spacer()
-                                                    .padding()
+                                                //Spacer()
+                                                .padding()
                                             }
                                         )
                                     } //End of Nav Link
                                     
                                 } //END GROUP
-                            } // END SECTION
+                            } // END SECTION */
                             
-                            Section(header: Text("SUBSCRIPTION")) {
+                            Section(header: Text("SUBSCRIPTION")){
                                 Group {
-                                    
                                     Group {
                                         NavigationLink(destination: UpgradeProView()) {
                                             Label(
@@ -83,15 +82,15 @@ struct ProfileView: View {
                                                     /* .resizable()*/
                                                     /*.scaledToFit()*/
                                                     .foregroundColor(.blue)
-                                                    Spacer()
-                                                        .padding()
+                                                    //Spacer()
+                                                    .padding()
                                                 }
                                             )
                                         } //End of Nav Link
                                         
                                     } //Group End
                                     
-                                    Group {
+                                /*  Group {
                                         NavigationLink(destination: FamilyPlanView()) {
                                             Label(
                                                 title: { Text("Family Plan")},
@@ -106,8 +105,7 @@ struct ProfileView: View {
                                                 } //End icon
                                             )
                                         } //End of Nav Link
-                                        
-                                    } //Group End
+                                    } //Group End */
                                     
                                 } //Fin de Group
                             } //FIN de section
@@ -125,14 +123,12 @@ struct ProfileView: View {
                                                 /*.scaledToFit()*/
                                                 .foregroundColor(.blue)
                                                 Spacer()
-                                                    .padding()
+                                                //.padding()
                                             }
                                         )
                                     } //End of Nav Link
                                 } //Group End
                             } //FIN de section
-                            
-                            
                             Group {
                                 Group {
                                     HStack {
@@ -252,7 +248,6 @@ struct ProfileView: View {
                                         } //End of icon
                                     )
                                 } //End of Nav link
-                                
                                 .padding()
                             }
                             

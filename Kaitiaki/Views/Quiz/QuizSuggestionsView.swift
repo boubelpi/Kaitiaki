@@ -23,7 +23,7 @@ struct QuizSuggestionsView: View {
                 } label: {
                     RoundedRectangle(cornerRadius: 15)
                         .foregroundColor(!answer.isEmpty ? .gray : .blue)
-                        .padding(10)
+                        .padding(30)
                         .frame(width: UIScreen.main.bounds.width / 2, height: 100)
                         .overlay(
                             Text(suggestion)

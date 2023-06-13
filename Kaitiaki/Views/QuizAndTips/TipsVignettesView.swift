@@ -22,9 +22,9 @@ struct TipsVignettesView: View {
                         .foregroundColor(Color("AccentColor2"))
                         .padding(15)
                         .multilineTextAlignment(.leading)
-                        .frame(width: UIScreen.main.bounds.width / 2, height: 141)
+                        .frame(width: UIScreen.main.bounds.width / 2, height: 115)
                     )
-                    .padding(44)
+                    .padding(37)
                     //  Spacer(minLength: 25)
                 }
                 Spacer(minLength: 41)

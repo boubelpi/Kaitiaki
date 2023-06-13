@@ -10,9 +10,10 @@ import SwiftUI
 struct CalculatorView: View {
     @State var co2_calc : [CO2e] = [CO2e(ar_of_all: [], ar_of_types: [], ar_of_strings: [], needed_ar: [])]
     var body: some View {
-        ScrollView {
-            VStack {
-                Text("""
+        NavigationView {
+            ScrollView {
+                VStack {
+                    Text("""
 Your usage emits **\(round_calc(co2_calc[0].co2_week,1)) kg CO2e per week**. This value includes the use of your devices, the transmission of data and the manufacturing and use of data centers.
 
 But the impact of the manufacturing of your devices is not included.
@@ -21,26 +22,34 @@ But the impact of the manufacturing of your devices is not included.
 
 Below, your yearly impact is given:**
 """
-                ).padding()
-                VStack {
-                    ForEach(co2_calc[0].needed_ar) {t in
-                        VStack {
-                            Text(t.s)
-                            HStack {
-                                ProgressView(value: t.a, total: co2_calc[0].needed_ar[co2_calc[0].needed_ar.count - 1].a)
-                                    .accentColor(.green)
-                                    .scaleEffect(x: 1, y: 5, anchor: .center)
-                                Text(round_calc(t.a, 1))
-                                Text("kg CO2e")
+                    ).padding()
+                    VStack {
+                        ForEach(co2_calc[0].needed_ar) {t in
+                            VStack {
+                                Text(t.s)
+                                HStack {
+                                    ProgressView(value: t.a, total: co2_calc[0].needed_ar[co2_calc[0].needed_ar.count - 1].a)
+                                        .accentColor(.green)
+                                        .scaleEffect(x: 1, y: 5, anchor: .center)
+                                    Text(round_calc(t.a, 1))
+                                    Text("kg CO2e")
+                                }
+                                .padding()
                             }
-                            .padding()
                         }
                     }
+                    Spacer()
+                    Text("**In general, most of your digital footprint comes from the construction of your devices, not from their use.**")
+                    Spacer()
+                    Spacer()
+                    Text("Would you like to know what your weekly or annual impact is equivalent to ? Let's discover this in the CO2 converter.")
+                    Spacer()
+                    Spacer(minLength: 39)
+                    NavigationLink(destination: ConverterView(txt: String(round_calc(co2_calc[0].co2_year,1)))) {
+                        Text("Know your annual impact").foregroundColor(.white)
+                    }
+                    .background(Rectangle().frame(width: 200, height: 51).foregroundColor(.accentColor))
                 }
-                Spacer()
-                Text("**In general, most of your digital footprint comes from the construction of your devices, not from their use.**")
-                Spacer()
-                Spacer()
             }
         }
     }

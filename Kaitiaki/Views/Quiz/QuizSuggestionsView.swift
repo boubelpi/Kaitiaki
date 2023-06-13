@@ -16,6 +16,10 @@ struct QuizSuggestionsView: View {
             ForEach(quiz.suggestions, id: \.self) { suggestion in
                 Button {
                     answer = suggestion
+                    ProfileResults.singletone.number_of_all_answers += 1
+                    if (answer == quiz.answer) {
+                        ProfileResults.singletone.number_of_correct_answer += 1
+                    }
                 } label: {
                     RoundedRectangle(cornerRadius: 15)
                         .foregroundColor(!answer.isEmpty ? .gray : .blue)

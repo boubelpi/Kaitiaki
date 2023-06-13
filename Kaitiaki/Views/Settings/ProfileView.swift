@@ -22,7 +22,7 @@ struct ProfileView: View {
     
     var body: some View {
         NavigationView {
-            MyProfileView()
+            MyProfileView(t : ProfileResults.singletone)
                 .toolbar {
                     ToolbarItem (placement: .navigationBarTrailing){
                         Button(action:{isPresented = true},

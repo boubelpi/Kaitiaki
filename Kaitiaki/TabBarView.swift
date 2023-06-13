@@ -8,30 +8,35 @@
 import SwiftUI
 import RAMAnimatedTabBarController
 
+func nextView (cas : String) -> some View {
+    switch cas {
+    case "calculator":
+        return AnyView(StartingPageView())
+    case "converter":
+        return AnyView(ConverterView())
+    case "quiz_tips":
+        return AnyView(QuizAndTipsView())
+    default:
+        return AnyView(ProfileView())
+    }
+}
+
 
 struct TabBarView: View {
+    @State private var selectedTab : Tab = .calculator
     var body: some View {
-        TabView {
-            StartingPageView()
-                .tabItem {
-                    Label("Carbon footprint calculator", systemImage: "leaf.fill")
+        VStack {
+            TabView(selection: $selectedTab) {
+                ForEach(Tab.allCases, id: \.rawValue) {tab in
+                    VStack {
+                        nextView(cas : tab.rawValue)
+                    }.tag(tab)
                 }
-
-            ConverterView(txt : "")
-                .tabItem {
-                    Label("CO2e converter", systemImage: "carbon.dioxide.cloud.fill")
-                }
-            
-            QuizAndTipsView()
-                .tabItem {
-                    Label("Quiz & Tips", systemImage: "message")
-                }
-            
-            //SettingsTabView()
-              ProfileView()
-                .tabItem {
-                    Label("Profile", systemImage: "person")
-                }
+            }
+        }
+        Spacer()
+        VStack {
+            AnimatedTabBar(selectedTab: $selectedTab)
         }
     }
 }

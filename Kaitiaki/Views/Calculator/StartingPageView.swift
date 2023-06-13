@@ -57,7 +57,7 @@ struct StartingPageView: View {
                         Text("""
                   Three parameters have been chosen, these are the most recurrent uses.
                
-                  We will **measure your carbon footprint** of emails, streaming or videocalls and obtain the amount of CO2 you emit in a week or in a year.
+                  We will **measure your carbon footprint** of emails, streaming or videocalls and obtain the amount of CO2e you emit in a week or in a year.
                
                   We will then compare the impact of your usages to the manufacturing of your appliances.
                """)

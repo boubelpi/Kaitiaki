@@ -12,10 +12,10 @@ struct ConverterView: View {
     var body: some View {
         ScrollView {
             VStack {
-                Text("CO2 converter")
+                Text("CO2e converter")
                     .font(.title)
                 Spacer(minLength: 21)
-                Text("By using the converter below, we can have the equivalent of this CO2 quantity in different areas.")
+                Text("By using the converter below, we can have the equivalent of this CO2e quantity in different areas.")
                 Text("(Source: ADEME)")
                 Spacer(minLength: 19)
                 VStack {
@@ -29,7 +29,8 @@ struct ConverterView: View {
                 }
                 .background(Rectangle().fill(Color.gray))
                 Spacer()
-                Spacer()
+                Text("This CO2e quantity represents as much emissions as to manufacture, consume or travel:")
+                Spacer(minLength: 32)
                 VStack(spacing: 14) {
                     VStack(spacing: 4) {
                         Text(String(find_water(txt)))
@@ -66,6 +67,7 @@ struct ConverterView: View {
                 }
                 .multilineTextAlignment(.leading)
             }
+            Text("This calculator accept decimal values but written with a dot, not a comma.")
         }
     }
 }

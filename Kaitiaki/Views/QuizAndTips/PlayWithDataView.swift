@@ -46,7 +46,6 @@ struct PlayWithDataView: View {
                 .bold()
                 .padding(.top, 20)
             Text("(The following data was extracted from Ecoist Club with courtesy of the ECOIST club)")
-                .bold()
                 .padding(.top, 10)
             Text("-If you keep your smartphone during a year, your GHG impact will be 33 kg of CO2 per year.")
                 .padding(.top, 20)

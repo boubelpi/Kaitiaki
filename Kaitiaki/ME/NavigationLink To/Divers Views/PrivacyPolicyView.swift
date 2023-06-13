@@ -14,7 +14,7 @@ struct PrivacyPolicyView: View {
      Privacy Policy
      
      ***User data collection***
-     THE PURPOSES OF PROCESSING YOUR PERSONAL DATA
+     ***THE PURPOSES OF PROCESSING YOUR PERSONAL DATA***
      Our mission is to constantly improve our App and provide you with new experiences. As part of this mission, we use your information for the following purposes:
       1 To make our service available. We use the information that you submit and information that is processed automatically to provide you with all requested services.
       2 To improve, test and monitor the effectiveness of our App. We use the information that is processed automatically to better understand user behavior and trends, detect potential outages and technical issues, to operate, protect, improve, and optimize our App.
@@ -36,8 +36,8 @@ struct PrivacyPolicyView: View {
      
      ***How you can exercise your rights***
      To be in control of your personal data, you have the following rights:
-     - Accessing / reviewing / updating / correcting your personal data. You may request a copy of, as well as updating and correcting your personal data collected during your use of the Service at support@basenjiapps.com.
-     - Deleting your personal data. You can request erasure of your personal data by sending us an email at support@basenjiapps.com.
+     - Accessing / reviewing / updating / correcting your personal data. You may request a copy of, as well as updating and correcting your personal data collected during your use of the Service at email@email.it.
+     - Deleting your personal data. You can request erasure of your personal data by sending us an email at email@email.it.
      - When you request deletion of your personal data, we will use reasonable efforts to honor your request. In some cases we may be legally required to keep some of the data for a certain time; in such event, we will fulfill your request after we have complied with our obligations.
      
      ***Admob***
@@ -59,14 +59,14 @@ struct PrivacyPolicyView: View {
      We are in compliance with the requirements of COPPA, we do not collect any personal information from anyone under 13 years of age. Our products and services are all directed to people who are at least 13 years old or older.
      
      ***Changes to our Privacy Policy***
-     The current Privacy Policy may be changed. We will keep this document up to date. Last updated: Oct 18, 2021.
+     The current Privacy Policy may be changed. We will keep this document up to date. Last updated: 14 Jun, 2023.
      
      ***Your consent***
      By using apps you consent to this Privacy Policy as well as all the 3rd party Privacy Policies mentioned above.
      
      ***Contacting us***
      If there are any questions regarding this privacy policy you may contact us using the information below.
-     support@basenjiapps.com
+     email@email.it
      """)
         }
     }

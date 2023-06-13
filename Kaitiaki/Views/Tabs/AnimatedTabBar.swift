@@ -35,11 +35,12 @@ struct AnimatedTabBar: View {
                 ForEach(Tab.allCases, id: \.rawValue) {tab in
                     Spacer()
                     Image(systemName: findImage(tab.rawValue))
-                        .scaleEffect(selectedTab == tab ? 1.25 : 1.0)
+                        .scaleEffect(selectedTab == tab ? 1.0 : 0.75)
                         .foregroundColor(selectedTab == tab ? .blue : .gray)
                         .font(.system(size: 22))
+                        .rotationEffect(.degrees(selectedTab == tab ? 17 : 0))
                         .onTapGesture {
-                            withAnimation(.easeIn(duration: 0.1)) {
+                            withAnimation(.easeInOut(duration: 0.1)) {
                                 selectedTab = tab
                             }
                         }

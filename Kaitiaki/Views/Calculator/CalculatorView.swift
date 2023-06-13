@@ -40,7 +40,9 @@ Below, your yearly impact is given:**
                 Spacer()
                 Text("**In general, most of your digital footprint comes from the construction of your devices, not from their use.**")
                 Spacer()
+                Text("(Source: ADEME)")
                 Spacer()
+                Text("Would you like to know what your weekly or annual impact is equivalent to ? Let's discover this in the CO2 converter.")
             }
         }
     }

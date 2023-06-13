@@ -25,19 +25,13 @@ func nextView (cas : String) -> some View {
 struct TabBarView: View {
     @State private var selectedTab : Tab = .calculator
     var body: some View {
-        VStack {
             TabView(selection: $selectedTab) {
                 ForEach(Tab.allCases, id: \.rawValue) {tab in
-                    VStack {
                         nextView(cas : tab.rawValue)
-                    }.tag(tab)
+                        .tag(tab)
                 }
-            }
         }
-        Spacer()
-        VStack {
-            AnimatedTabBar(selectedTab: $selectedTab)
-        }
+        AnimatedTabBar(selectedTab: $selectedTab)
     }
 }
 

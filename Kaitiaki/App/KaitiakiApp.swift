@@ -6,7 +6,7 @@
 //
 
 func nextView () -> some View {
-    if NameOfUser.singleton.username == "" {
+    if NameOfUser.singleton.username == "ZSU" {
         return AnyView(EnterNameView())
     }
     else {

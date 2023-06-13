@@ -43,10 +43,9 @@ func tabItemLabel (_ tabBarItem : String) -> String {
 struct AnimatedTabBar: View {
     @Binding var selectedTab : Tab
     var body: some View {
-        VStack {
+        ZStack {
             HStack {
                 ForEach(Tab.allCases, id: \.rawValue) {tab in
-                    Spacer()
                     VStack {
                         Image(systemName: findImage(tab.rawValue))
                             .scaleEffect(selectedTab == tab ? 1.0 : 0.75)
@@ -60,14 +59,13 @@ struct AnimatedTabBar: View {
                             }
                         Text(tabItemLabel(tab.rawValue))
                             .foregroundColor(selectedTab == tab ? .blue : .gray)
-                            .font(.system(size: 17))
+                            .font(.system(size: 12))
                     }
                     Spacer()
                 }
             }
-            .frame(width: nil, height: 67)
+            .frame(width: nil, height: 60)
             .background(.thinMaterial)
-            .cornerRadius(10)
             .padding()
         }
     }

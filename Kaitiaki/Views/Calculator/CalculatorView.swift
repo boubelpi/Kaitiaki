@@ -51,7 +51,7 @@ Below, your yearly impact is given:**
                         MultilineHStack(textArray){ text in
                             VStack{
                                 if wordsWLinks.contains(text.removePunctiation()){
-                                    NavigationLink(text + " ", destination: ConverterView(txt : round_calc(co2_calc[0].co2_year,1)))
+                                    NavigationLink(text + " ", destination: ConverterView(txt : round_calc(co2_calc[0].co2_year,1)).navigationBarBackButtonHidden(true))
                                 }else{
                                     Text(text + " ").fixedSize()
                                 }

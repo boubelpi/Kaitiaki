@@ -29,6 +29,7 @@ struct CO2e : Identifiable {
     mutating func bubble_sort() {
         var ar : [Pair] = []
         needed_ar = ar
+        ProfileResults.singletone.LastCalcResultYear = self.co2_year
         if (ar_of_all.count == 0) {return}
         if (ar_of_all.count == 1) {ProfileResults.singletone.LastCalcResultYear = self.co2_year
             needed_ar = [Pair(s : ar_of_strings[0], a : ar_of_all[0])]
@@ -49,12 +50,8 @@ struct CO2e : Identifiable {
                 }
             }
         }
-        ProfileResults.singletone.LastCalcResultYear = 0.0
         print("W \(self.co2_year)")
         for i in 0...ar_of_all.count - 1 {
-            if (ar_of_types[i] % 2 == 0) {
-                ProfileResults.singletone.LastCalcResultYear += Double(ar_of_all[i])
-            }
             needed_ar.append(Pair(s : ar_of_strings[i], a : ar_of_all[i]))
         }
         print("T \(ProfileResults.singletone.LastCalcResultYear)")

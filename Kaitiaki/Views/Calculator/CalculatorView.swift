@@ -9,6 +9,11 @@ import SwiftUI
 
 struct CalculatorView: View {
     @State var co2_calc : [CO2e] = [CO2e(ar_of_all: [], ar_of_types: [], ar_of_strings: [], needed_ar: [])]
+    @State private var text = "Would you like to know what your weekly or annual impact is equivalent to ? Let's discover this in the CO2 converter"
+    var textArray: [String]{
+        text.components(separatedBy: " ")
+    }
+    @State private var wordsWLinks: [String] = ["CO2", "converter"]
     var body: some View {
         NavigationView {
             ScrollView {
@@ -42,13 +47,18 @@ Below, your yearly impact is given:**
                     Text("**In general, most of your digital footprint comes from the construction of your devices, not from their use.**")
                     Spacer()
                     Spacer()
-                    Text("Would you like to know what your weekly or annual impact is equivalent to ? Let's discover this in the CO2 converter.")
-                    Spacer()
-                    Spacer(minLength: 39)
-                    NavigationLink(destination: ConverterView(txt: String(round_calc(co2_calc[0].co2_year,1)))) {
-                        Text("Know your annual impact").foregroundColor(.white)
+                    VStack{
+                        MultilineHStack(textArray){ text in
+                            VStack{
+                                if wordsWLinks.contains(text.removePunctiation()){
+                                    NavigationLink(text + " ", destination: ConverterView(txt : round_calc(co2_calc[0].co2_year,1)))
+                                }else{
+                                    Text(text + " ").fixedSize()
+                                }
+                            }
+                        }
                     }
-                    .background(Rectangle().frame(width: 200, height: 51).foregroundColor(.accentColor))
+                    Spacer(minLength: 51)
                 }
                 }
         }

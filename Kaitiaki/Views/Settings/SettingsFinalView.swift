@@ -22,7 +22,7 @@ struct SettingsFinalView: View {
                             Spacer()
                             Toggle(isOn: $settings.isInterfaceSoundsEnabled) {}
                         }
-                    } //Group End
+                    } //Group End 
                     
                     Group {
                         HStack {

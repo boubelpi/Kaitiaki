@@ -38,7 +38,7 @@ struct AnimatedTabBar: View {
                         .scaleEffect(selectedTab == tab ? 1.0 : 0.75)
                         .foregroundColor(selectedTab == tab ? .blue : .gray)
                         .font(.system(size: 22))
-                        .rotationEffect(.degrees(selectedTab == tab ? 17 : 0))
+                        .rotationEffect(.degrees(selectedTab == tab ? 73 : 0))
                         .onTapGesture {
                             withAnimation(.easeInOut(duration: 0.1)) {
                                 selectedTab = tab

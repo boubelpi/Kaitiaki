@@ -17,7 +17,7 @@ struct SubjectQuizListView: View {
                     .foregroundColor(.white)
                     .padding()
                     .frame(maxWidth: .infinity)
-                    .background(category == .internet ? Color.green.cornerRadius(15) : Color.accentColor.cornerRadius(15))
+                    .background(category == .internet ? Color("AccentColor2").cornerRadius(15) : Color.accentColor.cornerRadius(15))
                     //.foregroundColor(.accentColor)
                     .padding()
             }

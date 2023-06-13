@@ -28,6 +28,7 @@ struct PopupView: View {
                 Spacer()
                 Spacer()
             }
+            Spacer()
             Text("""
             With regards to digital devices, these are the most recurrent uses on peoples’ devices (laptop, desktop, smartphone, tablet, phone and TV).
 
@@ -35,9 +36,7 @@ struct PopupView: View {
             """)
             Text("(Source: ADEME)")
             .padding()
-            Spacer()
-            Spacer()
-            Spacer()
+            Spacer(minLength: 300)
         }
     }
 }

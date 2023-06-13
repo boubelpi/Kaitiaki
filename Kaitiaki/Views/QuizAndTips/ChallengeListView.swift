@@ -27,7 +27,7 @@ struct ChallengeListView: View {
                         .multilineTextAlignment(.leading)
                         .frame(width: UIScreen.main.bounds.width / 2, height: 141)
                     )
-                    .padding(30)
+                    .padding(44)
                     //  Spacer(minLength: 25)
                     
                 }

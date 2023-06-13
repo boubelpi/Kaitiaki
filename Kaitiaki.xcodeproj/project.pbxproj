@@ -67,6 +67,9 @@
 		6510CF332A38702400F1D372 /* TipTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6510CF322A38702400F1D372 /* TipTextView.swift */; };
 		6510CF352A3884DB00F1D372 /* AnimatedTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6510CF342A3884DB00F1D372 /* AnimatedTabBar.swift */; };
 		6510CF562A38C36500F1D372 /* DynamicLinkTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6510CF552A38C36500F1D372 /* DynamicLinkTextView.swift */; };
+		6510CF582A38E53100F1D372 /* PopupSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6510CF572A38E53100F1D372 /* PopupSources.swift */; };
+		6510CF5A2A38FA2B00F1D372 /* ModelName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6510CF592A38FA2B00F1D372 /* ModelName.swift */; };
+		6510CF5C2A38FB7300F1D372 /* EnterNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6510CF5B2A38FB7300F1D372 /* EnterNameView.swift */; };
 		653B5B8C2A2DD84C00DFAFFF /* ConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B5B8B2A2DD84C00DFAFFF /* ConverterView.swift */; };
 		653B5B8E2A2DE60C00DFAFFF /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B5B8D2A2DE60C00DFAFFF /* Converter.swift */; };
 		653B5B942A30CEF400DFAFFF /* StartingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B5B932A30CEF400DFAFFF /* StartingPageView.swift */; };
@@ -146,6 +149,9 @@
 		6510CF322A38702400F1D372 /* TipTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipTextView.swift; sourceTree = "<group>"; };
 		6510CF342A3884DB00F1D372 /* AnimatedTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTabBar.swift; sourceTree = "<group>"; };
 		6510CF552A38C36500F1D372 /* DynamicLinkTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicLinkTextView.swift; sourceTree = "<group>"; };
+		6510CF572A38E53100F1D372 /* PopupSources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupSources.swift; sourceTree = "<group>"; };
+		6510CF592A38FA2B00F1D372 /* ModelName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelName.swift; sourceTree = "<group>"; };
+		6510CF5B2A38FB7300F1D372 /* EnterNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNameView.swift; sourceTree = "<group>"; };
 		653B5B8B2A2DD84C00DFAFFF /* ConverterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterView.swift; sourceTree = "<group>"; };
 		653B5B8D2A2DE60C00DFAFFF /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
 		653B5B932A30CEF400DFAFFF /* StartingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingPageView.swift; sourceTree = "<group>"; };
@@ -338,6 +344,7 @@
 				6510CF232A3751D000F1D372 /* AnimatedTabBarModel.swift */,
 				6510CF2C2A37C07500F1D372 /* ProfileResultsModel.swift */,
 				6510CF302A385BD600F1D372 /* TipsVignetteModel.swift */,
+				6510CF592A38FA2B00F1D372 /* ModelName.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -345,6 +352,7 @@
 		1B1B2F422A1115430066DDD2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6510CF5B2A38FB7300F1D372 /* EnterNameView.swift */,
 				653B5B922A30CEC900DFAFFF /* Calculator */,
 				653B5B8A2A2DD83B00DFAFFF /* Converter */,
 				1B0D76E52A226F37007093A1 /* QuizAndTips */,
@@ -380,6 +388,7 @@
 				653B5B9C2A31D2C800DFAFFF /* PopupView.swift */,
 				653B5BA22A32372E00DFAFFF /* CalculatorView.swift */,
 				6510CF552A38C36500F1D372 /* DynamicLinkTextView.swift */,
+				6510CF572A38E53100F1D372 /* PopupSources.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -476,6 +485,7 @@
 				1BB09C392A2E7BCF00FA62A7 /* QuizAndTipsOption.swift in Sources */,
 				1B1B2EAD2A0A4C360066DDD2 /* FamilyPlanView.swift in Sources */,
 				6510CF292A376FB900F1D372 /* TabBarModel.swift in Sources */,
+				6510CF5A2A38FA2B00F1D372 /* ModelName.swift in Sources */,
 				1B1B2EA52A0A40980066DDD2 /* MoreView.swift in Sources */,
 				1B1B2EE62A0D94010066DDD2 /* PrivacyView.swift in Sources */,
 				1B1B2EE42A0D938B0066DDD2 /* TermsView.swift in Sources */,
@@ -490,6 +500,7 @@
 				1B1B2EB92A0A4FAF0066DDD2 /* HelpView.swift in Sources */,
 				1B1B2E9D2A09956B0066DDD2 /* ChallengeSectionView.swift in Sources */,
 				1B1B2EF82A0FF5210066DDD2 /* SettingsTabView.swift in Sources */,
+				6510CF5C2A38FB7300F1D372 /* EnterNameView.swift in Sources */,
 				1B0E002B2A08EF30000B6D29 /* ContentView.swift in Sources */,
 				6510CF242A3751D000F1D372 /* AnimatedTabBarModel.swift in Sources */,
 				1B1B2EB72A0A4F6A0066DDD2 /* BlogView.swift in Sources */,
@@ -502,6 +513,7 @@
 				653B5B9D2A31D2C800DFAFFF /* PopupView.swift in Sources */,
 				1B1B2EA72A0A47C70066DDD2 /* SignInView.swift in Sources */,
 				1B1B2EEA2A0D9C020066DDD2 /* PasswordView.swift in Sources */,
+				6510CF582A38E53100F1D372 /* PopupSources.swift in Sources */,
 				653B5B8E2A2DE60C00DFAFFF /* Converter.swift in Sources */,
 				1B1B2EFA2A1015490066DDD2 /* SignInView2.swift in Sources */,
 				1BB09C352A2E77F900FA62A7 /* PickerQuizAndTipsView.swift in Sources */,

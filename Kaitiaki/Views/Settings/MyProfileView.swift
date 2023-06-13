@@ -14,26 +14,19 @@ struct MyProfileView: View {
     @State private var prc : Double = 0.0
     var body: some View {
         ScrollView {
-            HStack {
-                Spacer()
-                Text("My profile")
-                    .bold()
-                    .frame(alignment: .leading)
-                    .font(.system(size: 25))
-                Spacer(minLength: 91)
-                Spacer(minLength: 141)
-            }
             VStack {
                 HStack {
-                    Ellipse().foregroundColor(.gray).frame(width: 100, height: 100)
+                    Image("tiger")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 100, height: 100)
+                        .clipped()
                     Spacer()
                     VStack {
-                        Text("Nome Cognome")
+                        Text(NameOfUser.singleton.username)
                             .bold()
                             .frame(alignment: .leading)
                             .font(.system(size: 25))
-                        Text("email@email.it")
-                            .font(.system(size: 15, weight: .thin))
                     }
                     Spacer()
                 }
@@ -125,7 +118,7 @@ struct MyProfileView: View {
                 }
                 .background(RoundedRectangle(cornerRadius: 10).frame(width: 88, height: 61).foregroundColor(Color("AccentColor2")))
             }
-        }
+        }.navigationTitle("My profile")
     }
 }
 

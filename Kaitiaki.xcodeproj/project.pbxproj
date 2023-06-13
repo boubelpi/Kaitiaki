@@ -64,6 +64,7 @@
 		6510CF2D2A37C07500F1D372 /* ProfileResultsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6510CF2C2A37C07500F1D372 /* ProfileResultsModel.swift */; };
 		6510CF2F2A385AC200F1D372 /* TipsVignettesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6510CF2E2A385AC200F1D372 /* TipsVignettesView.swift */; };
 		6510CF312A385BD600F1D372 /* TipsVignetteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6510CF302A385BD600F1D372 /* TipsVignetteModel.swift */; };
+		6510CF332A38702400F1D372 /* TipTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6510CF322A38702400F1D372 /* TipTextView.swift */; };
 		653B5B8C2A2DD84C00DFAFFF /* ConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B5B8B2A2DD84C00DFAFFF /* ConverterView.swift */; };
 		653B5B8E2A2DE60C00DFAFFF /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B5B8D2A2DE60C00DFAFFF /* Converter.swift */; };
 		653B5B942A30CEF400DFAFFF /* StartingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B5B932A30CEF400DFAFFF /* StartingPageView.swift */; };
@@ -140,6 +141,7 @@
 		6510CF2C2A37C07500F1D372 /* ProfileResultsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileResultsModel.swift; sourceTree = "<group>"; };
 		6510CF2E2A385AC200F1D372 /* TipsVignettesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsVignettesView.swift; sourceTree = "<group>"; };
 		6510CF302A385BD600F1D372 /* TipsVignetteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsVignetteModel.swift; sourceTree = "<group>"; };
+		6510CF322A38702400F1D372 /* TipTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipTextView.swift; sourceTree = "<group>"; };
 		653B5B8B2A2DD84C00DFAFFF /* ConverterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterView.swift; sourceTree = "<group>"; };
 		653B5B8D2A2DE60C00DFAFFF /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
 		653B5B932A30CEF400DFAFFF /* StartingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingPageView.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 				653B5BB42A360B0500DFAFFF /* EquipmentTipsView.swift */,
 				6510CF1E2A367EA800F1D372 /* PlayWithDataView.swift */,
 				6510CF2E2A385AC200F1D372 /* TipsVignettesView.swift */,
+				6510CF322A38702400F1D372 /* TipTextView.swift */,
 			);
 			path = QuizAndTips;
 			sourceTree = "<group>";
@@ -508,6 +511,7 @@
 				6510CF312A385BD600F1D372 /* TipsVignetteModel.swift in Sources */,
 				1BDEDEA42A2B40E800AE294F /* Tests&quiz.swift in Sources */,
 				653B5BB12A32B5E700DFAFFF /* ProgressViewStyle.swift in Sources */,
+				6510CF332A38702400F1D372 /* TipTextView.swift in Sources */,
 				1B1B2F3C2A1109010066DDD2 /* Settings.swift in Sources */,
 				1B0D76DF2A225C71007093A1 /* ChallengeQuizView.swift in Sources */,
 				1B1B2EA92A0A4AA40066DDD2 /* NudgeView.swift in Sources */,

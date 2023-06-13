@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct tip {
+struct tip : Hashable {
     var label_of_vignette : String
     var label_of_tip: String
     var text : String
@@ -252,9 +252,15 @@ func Text_for_tip (_ name : tipCategory) -> String {
     }
 }
 
-struct all_tips{
+class all_tips : Identifiable {
+    
+let id = UUID()
+    
+static let singleton = all_tips()
 
-var ar_of_all : [tip] = [
+private init() {}
+
+let ar_of_all : [tip] = [
     tip(label_of_vignette: "Energy consumption", label_of_tip: "Reducing the energy consumption of computers, tablets and mobile phones", text: Text_for_tip(.energy), source: "ADEME"),
     tip(label_of_vignette: "Extend the life of equipment", label_of_tip: "Extend the life of equipment", text : Text_for_tip(.equipment), source : "ADEME"),
     tip(label_of_vignette: "Use sobre equipment", label_of_tip: "Use sobre equipment", text : Text_for_tip(.sobre), source : "ADEME"),

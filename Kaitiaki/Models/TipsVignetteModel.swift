@@ -255,20 +255,20 @@ func Text_for_tip (_ name : tipCategory) -> String {
 struct all_tips{
 
 var ar_of_all : [tip] = [
-    tip(label_of_vignette: "Energy consumption", label_of_tip: "Reducing the energy consumption of computers, tablets and mobile phones", text: "", source: "ADEME"),
-    tip(label_of_vignette: "Extend the life of equipment", label_of_tip: "Extend the life of equipment", text : "", source : "ADEME"),
-    tip(label_of_vignette: "Use sobre equipment", label_of_tip: "Use sobre equipment", text : "", source : "ADEME"),
-    tip(label_of_vignette: "Mails", label_of_tip: "Mails: optimising reception and dispatch", text : "", source: "ADEME"),
-    tip(label_of_vignette: "Web queries", label_of_tip: "Web queries: keep it short and simple", text : "", source : "ADEME"),
-    tip(label_of_vignette: "Browsers", label_of_tip: "Browsers: Varying energy consumption", text : "", source: "ADEME"),
-    tip(label_of_vignette: "Data storage", label_of_tip: "Data storage", text : "", source: "ADEME"),
-    tip(label_of_vignette: "Eco-communication", label_of_tip: "Opting for eco-communication", text : "", source: "ADEME"),
-    tip(label_of_vignette: "Accesibility", label_of_tip: "Acessibility", text: "", source: "ADEME"),
-    tip(label_of_vignette: "Extend the life of appliances", label_of_tip: "Extending the life of appliances", text: "", source: "ADEME"),
-    tip(label_of_vignette: "Miscellaneous", label_of_tip: "Miscellaneous", text: "", source: "ADEME"),
-    tip(label_of_vignette: "Smartphone", label_of_tip: "Smartphone", text: "", source: "Fruggr"),
-    tip(label_of_vignette: "Video", label_of_tip: "Video", text: "", source: "Fruggr"),
-    tip(label_of_vignette: "Reconditioning", label_of_tip: "Reconditioning/recycling/repair", text : "", source: "ADEME"),
-    tip(label_of_vignette: "Applications", label_of_tip: "Applications", text: "", source: "ADEME")
+    tip(label_of_vignette: "Energy consumption", label_of_tip: "Reducing the energy consumption of computers, tablets and mobile phones", text: Text_for_tip(.energy), source: "ADEME"),
+    tip(label_of_vignette: "Extend the life of equipment", label_of_tip: "Extend the life of equipment", text : Text_for_tip(.equipment), source : "ADEME"),
+    tip(label_of_vignette: "Use sobre equipment", label_of_tip: "Use sobre equipment", text : Text_for_tip(.sobre), source : "ADEME"),
+    tip(label_of_vignette: "Mails", label_of_tip: "Mails: optimising reception and dispatch", text : Text_for_tip(.mails), source: "ADEME"),
+    tip(label_of_vignette: "Web queries", label_of_tip: "Web queries: keep it short and simple", text : Text_for_tip(.queries), source : "ADEME"),
+    tip(label_of_vignette: "Browsers", label_of_tip: "Browsers: Varying energy consumption", text : Text_for_tip(.browsers), source: "ADEME"),
+    tip(label_of_vignette: "Data storage", label_of_tip: "Data storage", text : Text_for_tip(.dataStorage), source: "ADEME"),
+    tip(label_of_vignette: "Eco-communication", label_of_tip: "Opting for eco-communication", text : Text_for_tip(.communication), source: "ADEME"),
+    tip(label_of_vignette: "Accesibility", label_of_tip: "Acessibility", text: Text_for_tip(.accesibility), source: "ADEME"),
+    tip(label_of_vignette: "Extend the life of appliances", label_of_tip: "Extending the life of appliances", text: Text_for_tip(.appliances), source: "ADEME"),
+    tip(label_of_vignette: "Miscellaneous", label_of_tip: "Miscellaneous", text: Text_for_tip(.miscellaneous), source: "ADEME"),
+    tip(label_of_vignette: "Smartphone", label_of_tip: "Smartphone", text: Text_for_tip(.smartphone), source: "Fruggr"),
+    tip(label_of_vignette: "Video", label_of_tip: "Video", text: Text_for_tip(.video), source: "Fruggr"),
+    tip(label_of_vignette: "Reconditioning", label_of_tip: "Reconditioning/recycling/repair", text : Text_for_tip(.reconditioning), source: "ADEME"),
+    tip(label_of_vignette: "Applications", label_of_tip: "Applications", text: Text_for_tip(.applications), source: "ADEME")
          ]
 }

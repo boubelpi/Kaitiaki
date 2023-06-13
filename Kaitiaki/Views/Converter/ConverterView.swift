@@ -21,7 +21,6 @@ struct ConverterView: View {
                 VStack {
                     Text("Enter an amount of CO2e below")
                     TextField("", text : $txt)
-                        .keyboardType(.numberPad)
                         .fixedSize(horizontal: false, vertical: true)
                         .padding()
                         .frame(width: 100,height: 50)

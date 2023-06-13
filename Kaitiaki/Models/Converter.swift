@@ -40,51 +40,26 @@ func round_calc (_ x : Double, _ after_dot : Int) -> String {
 }
 
 func find_water (_ x : String) -> Double {
-    var t : Int? = Int(x)
-    if (t != nil) {
-        return Double(round_calc(Double(water) / Double(tocn) * Double(t!), 2))!
-    }
-    else {
-        return 0.0
-    }
+    if (Double(x) == nil) {return 0.0}
+    return Double(round_calc(Double(water) / Double(tocn) * Double(x)!, 2))!
 }
 
 func find_voiture (_ x : String) -> Double {
-    var t : Int? = Int(x)
-    if (t != nil) {
-        return Double(round_calc(Double(voiture) / Double(tocn) * Double(t!), 2))!
-    }
-    else {
-        return 0.0
-    }
+    if (Double(x) == nil) {return 0.0}
+    return Double(round_calc(Double(voiture) / Double(tocn) * Double(x)!, 2))!
 }
 
 func find_tshirts(_ x : String) -> Double {
-    var t : Int? = Int(x)
-    if (t != nil) {
-        return Double(round_calc(Double(tshirts) / Double(tocn) * Double(t!), 2))!
-    }
-    else {
-        return 0.0
-    }
+    if (Double(x) == nil) {return 0.0}
+    return Double(round_calc(Double(tshirts) / Double(tocn) * Double(x)!, 2))!
 }
 
 func find_boeuf (_ x : String) -> Double {
-    var t : Int? = Int(x)
-    if (t != nil) {
-        return Double(round_calc(Double(boeuf) / Double(tocn) * Double(t!), 2))!
-    }
-    else {
-        return 0.0
-    }
+    if (Double(x) == nil) {return 0.0}
+    return Double(round_calc(Double(boeuf) / Double(tocn) * Double(x)!, 2))!
 }
 
 func find_biere (_ x : String) -> Double {
-    var t : Int? = Int(x)
-    if t != nil {
-        return Double(round_calc(Double(biere) / Double(tocn) * Double(t!), 2))!
-    }
-    else {
-        return 0.0
-    }
+    if (Double(x) == nil) {return 0.0}
+    return Double(round_calc(Double(biere) / Double(tocn) * Double(x)!, 2))!
 }

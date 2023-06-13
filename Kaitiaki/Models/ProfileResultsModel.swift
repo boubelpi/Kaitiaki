@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ProfileResults {
+class ProfileResults : ObservableObject {
     static let singletone = ProfileResults()
     private init() {}
     var LastCalcResultYear : Double = 0.0

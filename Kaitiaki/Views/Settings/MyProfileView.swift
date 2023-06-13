@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct MyProfileView: View {
+    @ObservedObject var t : ProfileResults
+    @State private var a : Double = 0.0
+    @State private var b : Double = 0.0
+    @State private var prc : Double = 0.0
     var body: some View {
         ScrollView {
             HStack {
@@ -50,7 +54,7 @@ struct MyProfileView: View {
                         Spacer()
                     }
                     HStack {
-                        Text("\(round_calc(ProfileResults.singletone.LastCalcResultWeek,2)) kg per week; \(round_calc(ProfileResults.singletone.LastCalcResultYear,2)) kg per year.").frame(alignment: .leading).font(.system(size: 15, weight: .medium))
+                        Text("\(round_calc(a,2)) kg per week; \(round_calc(b,2)) kg per year.").frame(alignment: .leading).font(.system(size: 15, weight: .medium))
                         Spacer()
                         Spacer()
                         Spacer()
@@ -74,7 +78,7 @@ struct MyProfileView: View {
                     }
                     HStack {
                         Spacer()
-                        Text("0.00 %").frame(alignment: .leading).font(.system(size: 15, weight: .medium))
+                        Text("\(round_calc(prc, 2)) %").frame(alignment: .leading).font(.system(size: 15, weight: .medium))
                         Spacer()
                         Spacer()
                         Spacer()
@@ -114,6 +118,12 @@ struct MyProfileView: View {
                 .background(RoundedRectangle(cornerRadius: 15).foregroundColor(Color.accentColor).frame(width: 365, height: 85))
                 .frame(alignment: .leading)
                 .padding(39)*/
+                Button("Update") {
+                    b = ProfileResults.singletone.LastCalcResultYear
+                    a = ProfileResults.singletone.LastCalcResultWeek
+                    prc = ProfileResults.singletone.percent * 100.0
+                }
+                .background(RoundedRectangle(cornerRadius: 10).frame(width: 88, height: 61).foregroundColor(Color("AccentColor2")))
             }
         }
     }
@@ -121,6 +131,6 @@ struct MyProfileView: View {
 
 struct MyProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        MyProfileView()
+        MyProfileView(t : ProfileResults.singletone)
     }
 }

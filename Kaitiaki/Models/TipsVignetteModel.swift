@@ -54,8 +54,8 @@ func Text_for_tip (_ name : tipCategory) -> String {
         return """
         Some equipment consumes less than others: a laptop consumes 50 to 80% less than a desktop computer, and a tablet even less.
 
-        La consommation d’un écran plat dépend beaucoup de sa taille, plus l'écran est grand plus il consomme d'énergie.
-
+        The power consumption of a flat screen depends very much on its size: the larger the screen, the more energy it consumes.
+        
         There are a number of environmental labels that identify high-performance, energy-efficient equipment: European Ecolabel, EPEAT, Nordic Ecolabel, Blue Angel and TCO.
         """
     case .mails:
@@ -203,25 +203,25 @@ func Text_for_tip (_ name : tipCategory) -> String {
         """
     case .smartphone:
         return """
-        Activer le mode sombre sur son smartphone.
-
-        Désactiver ses données cellulaires par défaut:
-
-        Garder son smartphone le plus longtemps possible
-
-        Trier régulièrement les médias et fichiers enregistrés sur son smartphone
-
-        Privilégiez l’envoie de SMS plutôt qu’une messagerie instantanée ou un mail
-
-        Activer le mode avion des que l’on utilise pas son téléphone
-
-        Charger sa batterie qu’entre 20% et 80 %
-
-        Supprimer les podcasts et e books écoutés ou lus
-
-        Stocker ses fichiers, notes et images sur son téléphone et non le cloud
-
-        Télécharger sa musique sur son tel pour l’écouter hors connexion
+        Activate dark mode on your smartphone.
+        
+        Deactivate cellular data by default
+        
+        Keeping your smartphone as long as possible
+        
+        Regularly sort the media and files stored on your smartphone
+        
+        Choose text messaging over instant messaging or email
+        
+        Activate aeroplane mode when your phone is not in use
+        
+        Only charge your battery between 20% and 80
+        
+        Delete podcasts and e-books that you have listened to or read
+        
+        Store your files, notes and images on your phone rather than in the cloud
+        
+        Download music to your phone for offline listening
         """
     case .video:
         return """

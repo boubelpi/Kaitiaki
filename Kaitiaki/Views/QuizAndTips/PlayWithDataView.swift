@@ -10,7 +10,11 @@ import SwiftUI
 struct PlayWithDataView: View {
     var body: some View {
         Group {
-            Text("The following is extracted from: ADEME:")
+            Text("Did you know that... ?")
+                .bold()
+                .padding(.top, 10)
+            Text("(The following data was extracted from the ADEME with courtesy of the ADEME)")
+                .padding(.top, 10)
             Text("-15,000 KM: this is the average distance travelled by a piece of digital data (email, download,video,web request...)")
                 .font(.body)
                 .padding(.top, 10)
@@ -38,9 +42,12 @@ struct PlayWithDataView: View {
                 .padding(.top, 20)
         }
         Group {
-            Text("The following is extracted from Ecoist Club:")
-                .font(.body)
+            Text("Did you know that ...?")
+                .bold()
                 .padding(.top, 20)
+            Text("(The following data was extracted from Ecoist Club with courtesy of the ECOIST club)")
+                .bold()
+                .padding(.top, 10)
             Text("-If you keep your smartphone during a year, your GHG impact will be 33 kg of CO2 per year.")
                 .padding(.top, 20)
             Text("-In 88% of renewal cases, devices are still in working condition. Extending their lifespan reduces their environmental impact.")

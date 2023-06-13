@@ -9,31 +9,32 @@ import SwiftUI
 
 struct LegalInformationView: View {
     var body: some View {
-        
+        NavigationView {
         Section("LEGAL INFORMATION"){
             Group{
-                NavigationLink(destination: PrivacyView()) {
-                Label(
-                    title: { Text("Privacy Policy")},
-                    icon: {
-                        Image(systemName:
-                                "lock.doc.fill")
-                        .foregroundColor(.blue)
-                    }
-                  )
+                NavigationLink(destination: PrivacyPolicyView()) {
+                    Label(
+                        title: { Text("Privacy Policy")},
+                        icon: {
+                            Image(systemName:
+                                    "lock.doc.fill")
+                            .foregroundColor(.blue)
+                        }
+                    )
                 }//End navigation
                 
-                NavigationLink(destination: TermsView()) {
-                Label(
-                    title: { Text("Terms of Use")},
-                    icon: {
-                        Image(systemName: "chart.bar.doc.horizontal")
-                           // .resizable()
-                           // .scaledToFit()
-                            .foregroundColor(.blue)
-                    }
-                )
+                NavigationLink(destination: TermsOfUseView()) {
+                    Label(
+                        title: { Text("Terms of Use")},
+                        icon: {
+                            Image(systemName: "chart.bar.doc.horizontal")
+                            // .resizable()
+                            // .scaledToFit()
+                                .foregroundColor(.blue)
+                        }
+                    )
                 }
+            }
             }//fin groupe
         }//fin section Legal information
     }

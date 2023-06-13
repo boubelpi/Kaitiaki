@@ -328,20 +328,27 @@ struct ProfileView: View {
                             } //Fin de section
                             
                             Section(header: Text("LEGAL INFORMATION")) {
-                                HStack {
-                                    Image(systemName: "")
-                                        .foregroundColor(.blue)
-                                    Text("Privacy policy")
-                                    Spacer()
-                                    //Toggle(isOn: $settings.isInterfaceSoundsEnabled) {}
+                                NavigationLink(destination: PrivacyPolicyView()) {
+                                    Label(
+                                        title: { Text("Privacy Policy")},
+                                        icon: {
+                                            Image(systemName:
+                                                    "lock.doc.fill")
+                                            .foregroundColor(.blue)
+                                        }
+                                    )
                                 }
                                 
-                                HStack {
-                                    Image(systemName: "")
-                                        .foregroundColor(.blue)
-                                    Text("Terms of use")
-                                    Spacer()
-                                    //Toggle(isOn: $settings.isInterfaceSoundsEnabled) {}
+                                NavigationLink(destination: TermsOfUseView()) {
+                                    Label(
+                                        title: { Text("Terms of Use")},
+                                        icon: {
+                                            Image(systemName: "chart.bar.doc.horizontal")
+                                            // .resizable()
+                                            // .scaledToFit()
+                                                .foregroundColor(.blue)
+                                        }
+                                    )
                                 }
                             } //Fin de section
                             

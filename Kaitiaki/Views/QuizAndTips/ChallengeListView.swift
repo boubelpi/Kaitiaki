@@ -23,7 +23,7 @@ struct ChallengeListView: View {
                     }
                     .background(RoundedRectangle(cornerRadius: 15)
                         .foregroundColor(category == .internet ? Color.green : Color.accentColor)
-                        .padding(15)
+                        .padding(16)
                         .multilineTextAlignment(.leading)
                         .frame(width: UIScreen.main.bounds.width / 2, height: 141)
                     )

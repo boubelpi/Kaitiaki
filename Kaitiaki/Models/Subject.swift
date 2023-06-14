@@ -17,7 +17,7 @@ extension Subject {
     static let all = [
         Subject(name: "Battery life",
                   category: .init(name: "Reduce your consumption of mobile terminals", category: .equipment),
-                  quiz: ChallengeQuiz(question: "What would you do to save the battery life of your device ?",suggestions: ["Let the battery discharge" ,"Set device to power save mode", "Over use of your device", "leave your device in a very cold room"], answer: "Set device to power save mode", tip: "Set standby times and set devices to power save mode. Tablets are configured to go to sleep very quickly to ensure maximum battery life.")),
+                  quiz: ChallengeQuiz(question: "What would you do to save the battery life of your device ?",suggestions: ["Let the battery  discharge","Set device to power save mode", "Over use of your device", "leave your device in a very cold room"], answer: "Set device to power save mode", tip: "Set standby times and set devices to power save mode. Tablets are configured to go to sleep very quickly to ensure maximum battery life.")),
   
         Subject(name: "Sleep mode",
                   category: .init(name: "Reduce your consumption of mobile terminals", category: .equipment),
@@ -29,7 +29,7 @@ extension Subject {
         
         Subject(name: "Screens",
                   category: .init(name: "Reduce your consumption of mobile terminals", category: .equipment),
-                  quiz: ChallengeQuiz(question: "What are the 2 things you can do to make the screens run more economically?",suggestions: ["Remove the wallpaper" ,"Empty your desktop", "Remove animated screensavers", "adjust brightness"], answer: "Adjust brightness & Remove animated screensavers", tip: "Operate screens more economically by removing animated screensavers (they prevent the computer from going to sleep and don't save electricity), adjusting brightness for a good compromise between visual comfort and energy savings...")),
+                  quiz: ChallengeQuiz(question: "What are the 2 things you can do to make the screens run more economically?",suggestions: ["Remove the wallpaper    & Empty  your desktop" ,"Empty your desktop & Remove animated screensavers", "Remove animated screensavers & Remove the wallpaper", "Adjust brightness & Remove animated screensavers"], answer: "Adjust brightness & Remove animated screensavers", tip: "Operate screens more economically by removing animated screensavers (they prevent the computer from going to sleep and don't save electricity), adjusting brightness for a good compromise between visual comfort and energy savings...")),
         
         Subject(name: "Impact of equipment",
                   category: .init(name: "Extend the life of your equipment", category: .equipment),

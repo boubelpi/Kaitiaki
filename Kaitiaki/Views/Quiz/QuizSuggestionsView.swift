@@ -22,10 +22,10 @@ struct QuizSuggestionsView: View {
                             ProfileResults.singletone.number_of_correct_answer += 1
                         }
                     } label: {
-                        RoundedRectangle(cornerRadius: 4)
+                        Rectangle()
                             .foregroundColor(!answer.isEmpty ? .gray : .blue)
-                            .padding(12)
-                            .frame(width: UIScreen.main.bounds.width / 2, height: 160)
+                            .padding(6.88)
+                            .frame(width: UIScreen.main.bounds.width / 2, height: 174)
                             .overlay(
                                 Text(suggestion)
                                     .foregroundColor(.white)

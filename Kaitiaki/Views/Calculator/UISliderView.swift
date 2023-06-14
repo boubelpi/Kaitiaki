@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import UIKit
 
 struct UISliderView: UIViewRepresentable {
     @Binding var value: Double

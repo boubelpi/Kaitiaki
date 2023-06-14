@@ -441,7 +441,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1B0E00202A08EF30000B6D29 /* Build configuration list for PBXProject "Kaitiaki" */;
+			buildConfigurationList = 1B0E00202A08EF30000B6D29 /* Build configuration list for PBXProject "Kaitiaki — protect the legacy" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -741,7 +741,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1B0E00202A08EF30000B6D29 /* Build configuration list for PBXProject "Kaitiaki" */ = {
+		1B0E00202A08EF30000B6D29 /* Build configuration list for PBXProject "Kaitiaki — protect the legacy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1B0E00312A08EF32000B6D29 /* Debug */,

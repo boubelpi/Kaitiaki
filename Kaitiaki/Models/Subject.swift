@@ -53,7 +53,7 @@ extension Subject {
 
         Subject(name: "Increase equipments' life expectancy",
                   category: .init(name: "Devices sustainability", category: .equipment),
-                quiz: ChallengeQuiz(question: "How long should you keep your electronic devices?",suggestions: ["Until the new version of a device is released," ,"at least 2 years", "Until it breaks or is damaged", "at least 4 years"], answer: "At least 4 years", tip: "Most of our environmental impact comes from the manufacture of our appliances and their end-of-life, if poorly managed. For example: manufacturing a computer alone requires no less than 240 kg of fossil fuels, 22 kg of chemicals, and 1.5 tonnes of water! The components of our appliances contain substances that are toxic to the environment and to human health. So it's best to change them as little as possible."))
+                quiz: ChallengeQuiz(question: "How long should you keep your electronic devices?",suggestions: ["Until the new version of a device is released," ,"at least 2 years", "Until it breaks or is damaged", "at least 4 years"], answer: "at least 4 years", tip: "Most of our environmental impact comes from the manufacture of our appliances and their end-of-life, if poorly managed. For example: manufacturing a computer alone requires no less than 240 kg of fossil fuels, 22 kg of chemicals, and 1.5 tonnes of water! The components of our appliances contain substances that are toxic to the environment and to human health. So it's best to change them as little as possible."))
 
 
     ]

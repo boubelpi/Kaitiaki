@@ -99,7 +99,7 @@
 		1B0D76E62A226F7F007093A1 /* QuizSuggestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizSuggestionsView.swift; sourceTree = "<group>"; };
 		1B0D76E82A227274007093A1 /* QuizTipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizTipView.swift; sourceTree = "<group>"; };
 		1B0D76EA2A227464007093A1 /* QuizGoBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizGoBackButton.swift; sourceTree = "<group>"; };
-		1B0E00252A08EF30000B6D29 /* Kaitiaki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kaitiaki.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B0E00252A08EF30000B6D29 /* Kaitiaki — protect the legacy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kaitiaki — protect the legacy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B0E00282A08EF30000B6D29 /* KaitiakiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaitiakiApp.swift; sourceTree = "<group>"; };
 		1B0E002A2A08EF30000B6D29 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1B0E002C2A08EF32000B6D29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -156,6 +156,7 @@
 		6510CF5B2A38FB7300F1D372 /* EnterNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNameView.swift; sourceTree = "<group>"; };
 		6510CF5D2A3925B500F1D372 /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
 		6510CF5F2A3925C400F1D372 /* TermsOfUseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfUseView.swift; sourceTree = "<group>"; };
+		6510CF612A3A153400F1D372 /* Script.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = Script.sh; sourceTree = "<group>"; };
 		653B5B8B2A2DD84C00DFAFFF /* ConverterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterView.swift; sourceTree = "<group>"; };
 		653B5B8D2A2DE60C00DFAFFF /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
 		653B5B932A30CEF400DFAFFF /* StartingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingPageView.swift; sourceTree = "<group>"; };
@@ -229,7 +230,7 @@
 		1B0E00262A08EF30000B6D29 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1B0E00252A08EF30000B6D29 /* Kaitiaki.app */,
+				1B0E00252A08EF30000B6D29 /* Kaitiaki — protect the legacy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -246,6 +247,7 @@
 				1B1B2F412A1115220066DDD2 /* Models */,
 				1B0E002C2A08EF32000B6D29 /* Assets.xcassets */,
 				1B0E002E2A08EF32000B6D29 /* Preview Content */,
+				6510CF612A3A153400F1D372 /* Script.sh */,
 			);
 			path = Kaitiaki;
 			sourceTree = "<group>";
@@ -402,9 +404,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1B0E00242A08EF30000B6D29 /* Kaitiaki */ = {
+		1B0E00242A08EF30000B6D29 /* Kaitiaki — protect the legacy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1B0E00332A08EF32000B6D29 /* Build configuration list for PBXNativeTarget "Kaitiaki" */;
+			buildConfigurationList = 1B0E00332A08EF32000B6D29 /* Build configuration list for PBXNativeTarget "Kaitiaki — protect the legacy" */;
 			buildPhases = (
 				1B0E00212A08EF30000B6D29 /* Sources */,
 				1B0E00222A08EF30000B6D29 /* Frameworks */,
@@ -414,13 +416,13 @@
 			);
 			dependencies = (
 			);
-			name = Kaitiaki;
+			name = "Kaitiaki — protect the legacy";
 			packageProductDependencies = (
 				653B5BAA2A3290E900DFAFFF /* ModalView */,
 				6510CF212A374D9E00F1D372 /* RAMAnimatedTabBarController */,
 			);
 			productName = Kaitiaki;
-			productReference = 1B0E00252A08EF30000B6D29 /* Kaitiaki.app */;
+			productReference = 1B0E00252A08EF30000B6D29 /* Kaitiaki — protect the legacy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -458,7 +460,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1B0E00242A08EF30000B6D29 /* Kaitiaki */,
+				1B0E00242A08EF30000B6D29 /* Kaitiaki — protect the legacy */,
 			);
 		};
 /* End PBXProject section */
@@ -693,7 +695,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -703,7 +705,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -724,7 +726,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -734,7 +736,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -750,7 +752,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1B0E00332A08EF32000B6D29 /* Build configuration list for PBXNativeTarget "Kaitiaki" */ = {
+		1B0E00332A08EF32000B6D29 /* Build configuration list for PBXNativeTarget "Kaitiaki — protect the legacy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1B0E00342A08EF32000B6D29 /* Debug */,

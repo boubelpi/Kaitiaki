@@ -25,7 +25,7 @@ struct QuizSuggestionsView: View {
                         RoundedRectangle(cornerRadius: 4)
                             .foregroundColor(!answer.isEmpty ? .gray : .blue)
                             .padding(12)
-                            .frame(width: UIScreen.main.bounds.width / 2, height: 130)
+                            .frame(width: UIScreen.main.bounds.width / 2, height: 160)
                             .overlay(
                                 Text(suggestion)
                                     .foregroundColor(.white)

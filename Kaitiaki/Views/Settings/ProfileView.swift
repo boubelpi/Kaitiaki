@@ -328,27 +328,32 @@ struct ProfileView: View {
                             } //Fin de section
                             
                             Section(header: Text("LEGAL INFORMATION")) {
-                                NavigationLink(destination: PrivacyPolicyView()) {
-                                    Label(
-                                        title: { Text("Privacy Policy")},
-                                        icon: {
-                                            Image(systemName:
-                                                    "lock.doc.fill")
-                                            .foregroundColor(.blue)
-                                        }
-                                    )
-                                }
-                                
-                                NavigationLink(destination: TermsOfUseView()) {
-                                    Label(
-                                        title: { Text("Terms of Use")},
-                                        icon: {
-                                            Image(systemName: "chart.bar.doc.horizontal")
-                                            // .resizable()
-                                            // .scaledToFit()
+                                HStack {
+                                    NavigationLink(destination: PrivacyPolicyView()) {
+                                        Label(
+                                            title: { Text("Privacy Policy")},
+                                            icon: {
+                                                Image(systemName:
+                                                        "lock.doc.fill")
                                                 .foregroundColor(.blue)
-                                        }
-                                    )
+                                            }
+                                        )
+                                    }
+                                    Spacer()
+                                }
+                                HStack {
+                                    NavigationLink(destination: TermsOfUseView()) {
+                                        Label(
+                                            title: { Text("Terms of Use")},
+                                            icon: {
+                                                Image(systemName: "chart.bar.doc.horizontal")
+                                                // .resizable()
+                                                // .scaledToFit()
+                                                    .foregroundColor(.blue)
+                                            }
+                                        )
+                                    }
+                                    Spacer()
                                 }
                             } //Fin de section
                             

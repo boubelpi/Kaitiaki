@@ -12,7 +12,6 @@ struct SettingsFinalView: View {
     @Binding var settings: Settings //pour relier les state qui sont dans le contentview
     
     var body: some View {
-        NavigationView {
             Section(header: Text("SETTINGS")) {
                 ScrollView {
                     Group {
@@ -142,7 +141,6 @@ struct SettingsFinalView: View {
                             }
                         )
                     }
-                }
                 }
                 .padding()
             }

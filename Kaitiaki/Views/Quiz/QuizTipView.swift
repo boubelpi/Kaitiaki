@@ -11,11 +11,14 @@ struct QuizTipView: View {
     var quiz: ChallengeQuiz
     var answer: String
     var body: some View {
-       tipView()
-            .padding()
+        ScrollView {
+            tipView()
+                .padding()
+        }
     }
     @ViewBuilder
     private func tipView() -> some View {
+        ScrollView {
             switch true {
             case !answer.isEmpty && (answer != quiz.answer):
                 Text("Incorrect")
@@ -33,6 +36,7 @@ struct QuizTipView: View {
                 }
             default: EmptyView()
             }
+        }
     }
 }
 
